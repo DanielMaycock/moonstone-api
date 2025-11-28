@@ -1,0 +1,5274 @@
+
+
+[
+  {
+    "name": "Dim & Dimmer",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Banshee",
+    "arcaneAbilites": [
+      {
+        "id": "9a785d65-665b-415d-862d-cba93e5a4b68",
+        "name": "Ghastly Scream",
+        "pulse": false,
+        "range": 6,
+        "modelId": "28562575-5965-4ffc-a249-276b4ce0bddd",
+        "energyCost": 4,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "8d30e57c-1ab4-4804-8128-fadf5462281a",
+            "abilityId": "9a785d65-665b-415d-862d-cba93e5a4b68",
+            "outcomeText": "Move target enemy X\" directly away. If the enemy is in possession of at least 1 Moonstone it loses possession of one Moonstone it is carrying before moving. Place it in base contact with the enemy at depth '1'.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "ff657979-a864-4964-97cd-cdec8d75eae2",
+            "abilityId": "9a785d65-665b-415d-862d-cba93e5a4b68",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "a79d3eda-0a87-4a7c-912e-4b7b1fc00389",
+        "name": "Ear Splitting Screech",
+        "pulse": false,
+        "range": 6,
+        "modelId": "28562575-5965-4ffc-a249-276b4ce0bddd",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "0cd6ec0c-564d-43de-babe-10da31225f4b",
+            "abilityId": "a79d3eda-0a87-4a7c-912e-4b7b1fc00389",
+            "outcomeText": "Target suffers X-1 Wds and gains [Bleed: During the Discard Step, this character suffers 1 Wd then loses this ability.]",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "3ffc0379-1c79-4119-8270-8c775343a87b",
+            "abilityId": "a79d3eda-0a87-4a7c-912e-4b7b1fc00389",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chezapeaky",
+    "arcaneAbilites": [
+      {
+        "id": "452731ba-652e-498e-8b91-a6fc02c2c1d6",
+        "name": "Junk Toss",
+        "pulse": false,
+        "range": 4,
+        "modelId": "b4d7d587-2528-4ecb-bc20-506e872a17ef",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "cf383b55-1db0-4ef3-b474-8f6c8c253e28",
+            "abilityId": "452731ba-652e-498e-8b91-a6fc02c2c1d6",
+            "outcomeText": "Target suffers X Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "9d4d3836-53b9-4ef8-9488-bbbca32fb8cb",
+            "abilityId": "452731ba-652e-498e-8b91-a6fc02c2c1d6",
+            "outcomeText": "Target suffers 1 Wd then is moved X\" directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "e61c6a93-9590-4aae-a675-a1a2e7cf4418",
+            "abilityId": "452731ba-652e-498e-8b91-a6fc02c2c1d6",
+            "outcomeText": "Target cannot take the Jog action until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "9bbcbbd0-bf15-4580-9fe6-76d0c044ad47",
+            "abilityId": "452731ba-652e-498e-8b91-a6fc02c2c1d6",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "4fa5684f-14cf-41b4-a22e-f77b0b872339",
+        "name": "Gone Fishin'",
+        "pulse": false,
+        "range": 4,
+        "modelId": "b4d7d587-2528-4ecb-bc20-506e872a17ef",
+        "energyCost": 2,
+        "description": "Resolve this action with +2 Arcane Stat if there is a Water Feature within 4\" of this model.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "d1c87ece-dcc8-4f7e-b7e8-a0df22b6b949",
+            "abilityId": "4fa5684f-14cf-41b4-a22e-f77b0b872339",
+            "outcomeText": "Target restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "ee6d5337-dedc-40eb-99bc-b6f6d4020c22",
+            "abilityId": "4fa5684f-14cf-41b4-a22e-f77b0b872339",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Olim",
+    "arcaneAbilites": [
+      {
+        "id": "35e1e793-6b4e-4a42-8b8d-20cee49437d4",
+        "name": "Buttermilk Elixir",
+        "pulse": false,
+        "range": 6,
+        "modelId": "2c836ba3-fdc6-4b98-b67a-5e3fd123c997",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "7682956a-b555-4119-b465-b7e736b37027",
+            "abilityId": "35e1e793-6b4e-4a42-8b8d-20cee49437d4",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "87be9e58-8c1e-4be7-87bd-5ff4a3481819",
+            "abilityId": "35e1e793-6b4e-4a42-8b8d-20cee49437d4",
+            "outcomeText": "Target Norse or Gnome gains +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "22079f75-35cb-4b5b-b414-dd6971aa28e9",
+            "abilityId": "35e1e793-6b4e-4a42-8b8d-20cee49437d4",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Quack",
+    "arcaneAbilites": [
+      {
+        "id": "9815b0f8-7e3f-42de-97c2-a68be59ae046",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "2408ff3e-c926-4b2f-b025-0ed59b3a0458",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "3fea77e4-e0cc-4cd7-82ce-bca36e1e54fa",
+            "abilityId": "9815b0f8-7e3f-42de-97c2-a68be59ae046",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "d666bc42-a5fd-4a41-b548-f40ece4a94c0",
+            "abilityId": "9815b0f8-7e3f-42de-97c2-a68be59ae046",
+            "outcomeText": "Target restores X+1 wounds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "fcb4aeef-6d16-4d6e-8d6e-03a56b1dba45",
+        "name": "Blinding Powder",
+        "pulse": false,
+        "range": 4,
+        "modelId": "2408ff3e-c926-4b2f-b025-0ed59b3a0458",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "3337924e-0781-4740-80bc-b2bbf490eac0",
+            "abilityId": "fcb4aeef-6d16-4d6e-8d6e-03a56b1dba45",
+            "outcomeText": " Reduce target’s Melee and Arcane stats by 2X until the end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "929f63a9-5af6-4d4b-a7b4-458748a17596",
+            "abilityId": "fcb4aeef-6d16-4d6e-8d6e-03a56b1dba45",
+            "outcomeText": "This model loses all energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Doug, the Flatulent",
+    "arcaneAbilites": [
+      {
+        "id": "7324a1a1-31bd-44de-af1a-e7b93457a0da",
+        "name": "Digger",
+        "pulse": false,
+        "range": null,
+        "modelId": "d26da9de-80aa-4944-a4d9-9c58a20a3fab",
+        "energyCost": null,
+        "description": "When this model takes a Harvest action, flip an Arcane Card and reduce the Depth Value by X, where X is the value of the card.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "faabdfc7-d09f-401f-83df-54010477bc50",
+            "abilityId": "7324a1a1-31bd-44de-af1a-e7b93457a0da",
+            "outcomeText": "All models within a\n3” pulse suffer 2 Magical Dmg.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dentia",
+    "arcaneAbilites": [
+      {
+        "id": "4d546e6f-cf4d-4487-961a-132c7c252ca9",
+        "name": "Sleepy Time",
+        "pulse": false,
+        "range": 6,
+        "modelId": "fdf673a6-6a0c-4d0c-99a3-4b28c227a89c",
+        "energyCost": 3,
+        "description": "This attack is not modified by Evade Stat.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "aa586b7e-8069-497a-8669-ef19f20391ee",
+            "abilityId": "4d546e6f-cf4d-4487-961a-132c7c252ca9",
+            "outcomeText": "Target gains Weakling until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "e3f9db1b-568a-4a24-8a1c-2a0291811e6c",
+            "abilityId": "4d546e6f-cf4d-4487-961a-132c7c252ca9",
+            "outcomeText": "Target with Weakling or Feeble loses all energy and gains +X Evade Stat until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "894841f8-a403-480b-aa3b-c402a6ca9afc",
+            "abilityId": "4d546e6f-cf4d-4487-961a-132c7c252ca9",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brigid",
+    "arcaneAbilites": [
+      {
+        "id": "848a46a0-cde9-41d8-8f1b-968f71bbd52f",
+        "name": "Faerie Fire Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "b0de7c86-8cc4-4ad5-81a0-8e9eebf3130f",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9771832f-2359-416c-98c1-3834e14f7b43",
+            "abilityId": "848a46a0-cde9-41d8-8f1b-968f71bbd52f",
+            "outcomeText": "Target suffers X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "8b88962b-c579-42b0-be01-9c7da270e902",
+            "abilityId": "848a46a0-cde9-41d8-8f1b-968f71bbd52f",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "a0902a1c-216b-4b15-991d-e2f67d7bde61",
+        "name": "Poor Unfortunate Souls",
+        "pulse": false,
+        "range": 6,
+        "modelId": "b0de7c86-8cc4-4ad5-81a0-8e9eebf3130f",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "daafa077-4818-4e9b-9fd9-b0a1ea2e3ff6",
+            "abilityId": "a0902a1c-216b-4b15-991d-e2f67d7bde61",
+            "outcomeText": "Target character restores X Wds then loses X Energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "c38ccfb3-7617-4251-9fc2-343afdac4c0a",
+            "abilityId": "a0902a1c-216b-4b15-991d-e2f67d7bde61",
+            "outcomeText": "Target other Pirate gains X Energy then suffers X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c06b4a8c-1eb6-4f12-87a3-3b683110af78",
+            "abilityId": "a0902a1c-216b-4b15-991d-e2f67d7bde61",
+            "outcomeText": null,
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "69760dc7-c34f-405f-b002-2d10bec3dac3",
+            "abilityId": "a0902a1c-216b-4b15-991d-e2f67d7bde61",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Peggy",
+    "arcaneAbilites": [
+      {
+        "id": "65e99393-51f0-4716-9721-5c4b4f9d797e",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "52b69c3b-94b6-4a16-877a-991aaa8ddbaa",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "291db5bf-69da-4b65-ad73-f03fa94f2b85",
+            "abilityId": "65e99393-51f0-4716-9721-5c4b4f9d797e",
+            "outcomeText": " Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "af1e7acb-804c-439a-a223-3c75eb21d95d",
+            "abilityId": "65e99393-51f0-4716-9721-5c4b4f9d797e",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Herbert Growbottom",
+    "arcaneAbilites": [
+      {
+        "id": "c8e7b78f-ed94-4d7f-881d-8f5ce0021700",
+        "name": "Verdant Growth",
+        "pulse": false,
+        "range": null,
+        "modelId": "9422ce13-7817-483d-b634-e8e1dcd0f910",
+        "energyCost": 2,
+        "description": "",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "08e33db2-7543-4f7b-9784-ecb466c94281",
+            "abilityId": "c8e7b78f-ed94-4d7f-881d-8f5ce0021700",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "50a5c61c-cb6e-4351-8e3f-f48c9d060214",
+            "abilityId": "c8e7b78f-ed94-4d7f-881d-8f5ce0021700",
+            "outcomeText": "Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "4ac61678-0717-47bb-897b-682b9370b452",
+        "name": "Wither",
+        "pulse": false,
+        "range": 6,
+        "modelId": "9422ce13-7817-483d-b634-e8e1dcd0f910",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "00f43ec0-6381-41f4-aa5a-d41dfaaeeab0",
+            "abilityId": "4ac61678-0717-47bb-897b-682b9370b452",
+            "outcomeText": "Target suffers X+1 Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "401c6a29-c37a-4487-9b9f-b713a48a0899",
+            "abilityId": "4ac61678-0717-47bb-897b-682b9370b452",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Iris & Hellebore",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Barnakelle",
+    "arcaneAbilites": [
+      {
+        "id": "e97033a1-955e-46ce-8a54-223a869605a0",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "4d2baf43-b3e1-45eb-8f10-a6f02d898616",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9dea0fb7-9a0c-463b-876b-edf2673c6e20",
+            "abilityId": "e97033a1-955e-46ce-8a54-223a869605a0",
+            "outcomeText": "Place a friendly model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "a0845d1f-c6da-43ac-937d-991a0583957b",
+            "abilityId": "e97033a1-955e-46ce-8a54-223a869605a0",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "f14bc58f-869e-4dc5-98fb-469849f4f178",
+        "name": "Dead Troll's Finger",
+        "pulse": false,
+        "range": 4,
+        "modelId": "4d2baf43-b3e1-45eb-8f10-a6f02d898616",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "aa854d21-e50d-4d15-b7ff-c4984e133935",
+            "abilityId": "f14bc58f-869e-4dc5-98fb-469849f4f178",
+            "outcomeText": "Target Pirate or Troll gains X energy and suffers -X Arcane Stat until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "aae210ba-be31-4518-81d5-b5d9e5330ff5",
+            "abilityId": "f14bc58f-869e-4dc5-98fb-469849f4f178",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Quarrel",
+    "arcaneAbilites": [
+      {
+        "id": "676146c2-0002-4d41-9c06-095e65aa6e85",
+        "name": "Shoot Crossbow",
+        "pulse": false,
+        "range": 14,
+        "modelId": "887c1786-5a90-4ccb-a330-dd270cfdb5a8",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "fbe49140-5245-48f1-96d6-e1a31985a2bb",
+            "abilityId": "676146c2-0002-4d41-9c06-095e65aa6e85",
+            "outcomeText": "The Reload ability cannot be used for the remainder of the game.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "a1f8cb1c-4f11-4786-ad6f-84c4b1d907cb",
+            "abilityId": "676146c2-0002-4d41-9c06-095e65aa6e85",
+            "outcomeText": "Target suffers 2X Piercing Dmg then is moved 1” directly away",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sir Hogswash",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "The Fencer",
+    "arcaneAbilites": [
+      {
+        "id": "bd5a5a6f-0028-49b0-a80c-1e767008c8ef",
+        "name": "Enfeeble",
+        "pulse": false,
+        "range": 4,
+        "modelId": "c48c2fc8-24a2-4c14-ba5a-ec4c259fa966",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "75de3c4b-590a-4851-a147-2d6c205c8efc",
+            "abilityId": "bd5a5a6f-0028-49b0-a80c-1e767008c8ef",
+            "outcomeText": "Reduce all Melee Dmg dealt by target by -X until the end of the turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "2f87966f-7db1-4ec7-ae83-2ad1dcf81828",
+            "abilityId": "bd5a5a6f-0028-49b0-a80c-1e767008c8ef",
+            "outcomeText": "The target gains +1 energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Mortician",
+    "arcaneAbilites": [
+      {
+        "id": "4072e919-a30d-4a21-8fb3-947bfb679068",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "0ee8d3d5-da8f-4fd1-b93b-e2a5709c2d40",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "cb91c524-6b9d-4c15-8069-ebfc70481c91",
+            "abilityId": "4072e919-a30d-4a21-8fb3-947bfb679068",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "8c45cd3f-f71d-4da2-a44d-118381b25acc",
+            "abilityId": "4072e919-a30d-4a21-8fb3-947bfb679068",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "0980ddbf-cd71-4a4f-b24c-d4d1b337f709",
+        "name": "Rigor Mortis",
+        "pulse": false,
+        "range": 6,
+        "modelId": "0ee8d3d5-da8f-4fd1-b93b-e2a5709c2d40",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "7800941b-5f04-46b8-baed-c01d2b38a65c",
+            "abilityId": "0980ddbf-cd71-4a4f-b24c-d4d1b337f709",
+            "outcomeText": "Target discards all energy and suffers 1 Wd.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "870bbd3c-8463-4881-99df-12a260fb7f09",
+            "abilityId": "0980ddbf-cd71-4a4f-b24c-d4d1b337f709",
+            "outcomeText": " This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "4766ee94-4c38-482f-b66c-29e049cf2488",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "0ee8d3d5-da8f-4fd1-b93b-e2a5709c2d40",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "f66b8383-6d29-4471-ab5d-7ac9e8dd19d6",
+            "abilityId": "4766ee94-4c38-482f-b66c-29e049cf2488",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "6f40a247-f027-4124-811b-012612a3dbb8",
+            "abilityId": "4766ee94-4c38-482f-b66c-29e049cf2488",
+            "outcomeText": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Young Jack",
+    "arcaneAbilites": [
+      {
+        "id": "4111ea5e-961f-4137-bcbf-16e480591795",
+        "name": "Magic Brew",
+        "pulse": false,
+        "range": null,
+        "modelId": "83f7ea11-36a9-45cd-b95d-a3d65bdbc015",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "f506f82d-fcc5-407f-a200-736c2f58bc75",
+            "abilityId": "4111ea5e-961f-4137-bcbf-16e480591795",
+            "outcomeText": "This model gains X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "cfed6fac-a615-47dd-be2e-a4ea51a6e3a4",
+            "abilityId": "4111ea5e-961f-4137-bcbf-16e480591795",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "2d7daa35-da2f-4029-af06-79b138174ffb",
+            "abilityId": "4111ea5e-961f-4137-bcbf-16e480591795",
+            "outcomeText": "This model restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gotchgut",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Kavanagh, the Jongler",
+    "arcaneAbilites": [
+      {
+        "id": "f0d64613-a6b9-44ad-b7cd-262f281e2eed",
+        "name": "Butterfingers",
+        "pulse": false,
+        "range": 6,
+        "modelId": "cf031c28-c4f4-4895-b1a6-c809c984c8bb",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2fe12b2e-fcc9-445d-a27d-aef744be201a",
+            "abilityId": "f0d64613-a6b9-44ad-b7cd-262f281e2eed",
+            "outcomeText": " Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of ‘1’.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "da8c1c27-2429-40ca-aee6-4b71773b1851",
+            "abilityId": "f0d64613-a6b9-44ad-b7cd-262f281e2eed",
+            "outcomeText": "This model discards all energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ShabbaroOn",
+    "arcaneAbilites": [
+      {
+        "id": "8817a793-a0f5-4f2f-aabe-3b8c68efa0cf",
+        "name": "Transconbobulate",
+        "pulse": false,
+        "range": 8,
+        "modelId": "23db2f8f-7c67-474e-8cb1-52b7be9c5404",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "f3f69ac8-3405-419b-8845-4b379e7156d2",
+            "abilityId": "8817a793-a0f5-4f2f-aabe-3b8c68efa0cf",
+            "outcomeText": "This character suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "cfe21afa-3b4a-44be-b869-5fe4d1492025",
+            "abilityId": "8817a793-a0f5-4f2f-aabe-3b8c68efa0cf",
+            "outcomeText": "Restore all wounds and energy of target Goblin, then place it within 8” of this model.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 10,
+            "cardColourRequirement": 6
+          }
+        ]
+      },
+      {
+        "id": "469283f0-a9f5-461e-b42a-324099e7ebdc",
+        "name": "Goblin Luck",
+        "pulse": false,
+        "range": 8,
+        "modelId": "23db2f8f-7c67-474e-8cb1-52b7be9c5404",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "760816f2-e7df-498c-bb91-e9ada88c7c29",
+            "abilityId": "469283f0-a9f5-461e-b42a-324099e7ebdc",
+            "outcomeText": "Target enemy or Goblin immediately suffers one Catastrophe printed on their card. If it requires a target, you may choose any target that meets the ability’s requirements.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "62bf228a-75e4-4bdd-9f28-86c77123dc5a",
+            "abilityId": "469283f0-a9f5-461e-b42a-324099e7ebdc",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "e5aa1775-d54e-483a-a396-f3fe93f09435",
+        "name": "Goblin Mischief",
+        "pulse": true,
+        "range": 6,
+        "modelId": "23db2f8f-7c67-474e-8cb1-52b7be9c5404",
+        "energyCost": 2,
+        "description": "Deal an Arcane Card to each Goblin within the Pulse. They receive the following effects, then shuffle the cards back into the Arcane Deck.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "03a12527-33c3-4690-8f5a-70519829db2c",
+            "abilityId": "e5aa1775-d54e-483a-a396-f3fe93f09435",
+            "outcomeText": "Suffer 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "47aa11ce-bb65-4352-b53b-2bfb126b2fc3",
+            "abilityId": "e5aa1775-d54e-483a-a396-f3fe93f09435",
+            "outcomeText": " Gain +X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "6abc21a4-2ab1-4e22-ade2-ad7fabc1df07",
+            "abilityId": "e5aa1775-d54e-483a-a396-f3fe93f09435",
+            "outcomeText": "Gain +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Silvertongue",
+    "arcaneAbilites": [
+      {
+        "id": "b0657000-55cb-4781-8c48-4a89abd3009c",
+        "name": "Whispered Secrets",
+        "pulse": false,
+        "range": 6,
+        "modelId": "bf402f11-d1d1-4459-90e4-8b63bae331cb",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "6a02a302-1536-4628-9c7a-b1c90ecaf9f2",
+            "abilityId": "b0657000-55cb-4781-8c48-4a89abd3009c",
+            "outcomeText": "Target friendly Faerie gains X energy and restores 1 Wd.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "7521a549-abae-4d85-a1f7-53742022cf4b",
+            "abilityId": "b0657000-55cb-4781-8c48-4a89abd3009c",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vicious Syd",
+    "arcaneAbilites": [
+      {
+        "id": "19df014d-e7cf-419a-99cc-51810f2f2bae",
+        "name": "Where’d You Come From!?",
+        "pulse": false,
+        "range": 6,
+        "modelId": "a5934f3e-1bb2-4e55-89e4-5edb05ee1ff2",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "77ef1197-67b9-4137-903a-53b3ce60d167",
+            "abilityId": "19df014d-e7cf-419a-99cc-51810f2f2bae",
+            "outcomeText": " Place this model anywhere in base contact with target enemy",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c4d7066a-4ba3-4a46-927d-7e61844c81f3",
+            "abilityId": "19df014d-e7cf-419a-99cc-51810f2f2bae",
+            "outcomeText": "The resisting player places this model anywhere within 6”.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Teetoe",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Wasp",
+    "arcaneAbilites": [
+      {
+        "id": "1d4094c3-f2d8-4db0-8091-daff29b1ddd8",
+        "name": "Throw Javelin",
+        "pulse": false,
+        "range": 6,
+        "modelId": "85698bfc-2a32-4761-b4d7-75b0b497b3a7",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "34994964-f7ef-479b-b0a6-1d14d9ace357",
+            "abilityId": "1d4094c3-f2d8-4db0-8091-daff29b1ddd8",
+            "outcomeText": "Target suffers X Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "666b5848-e425-494b-ad1e-dea1b594fba6",
+            "abilityId": "1d4094c3-f2d8-4db0-8091-daff29b1ddd8",
+            "outcomeText": " This character suffers 1 Wd.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Negroli",
+    "arcaneAbilites": [
+      {
+        "id": "7aeb7f2f-8289-40ae-ac0a-acd7317e7f5f",
+        "name": "Summon Reinforcements",
+        "pulse": false,
+        "range": null,
+        "modelId": "33ef3787-5f30-4b93-8c7c-165f08468edb",
+        "energyCost": 2,
+        "description": "This action cannot bring a character into play if it is already in play.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "f83d2add-3aaa-47a4-9a2c-0ffc4feee2e0",
+            "abilityId": "7aeb7f2f-8289-40ae-ac0a-acd7317e7f5f",
+            "outcomeText": "Place a new Solder Psychopomp in base contact with this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "c004cee3-1777-4d1e-a9c2-47f452d11fda",
+            "abilityId": "7aeb7f2f-8289-40ae-ac0a-acd7317e7f5f",
+            "outcomeText": "This character suffers 3 Wds or, if there is a friendly Psychopomp within 6\", you may choose a friendly Psychopomp within 6\" to be slain instead.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eric, the Squire",
+    "arcaneAbilites": [
+      {
+        "id": "0e8aaebe-9d65-40b9-bfd5-99712700ed51",
+        "name": "Field Medic",
+        "pulse": false,
+        "range": 4,
+        "modelId": "593322c1-e3b5-4582-b397-dd1cf9e6999b",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "73bac19e-2f5d-465a-923f-bf9b14b47379",
+            "abilityId": "0e8aaebe-9d65-40b9-bfd5-99712700ed51",
+            "outcomeText": "target Soldier or Noble restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "88bb23d9-d25d-4f6f-a089-b31b14ffe1b2",
+            "abilityId": "0e8aaebe-9d65-40b9-bfd5-99712700ed51",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Liv",
+    "arcaneAbilites": [
+      {
+        "id": "18eb21b3-6714-4a9f-b244-1026bea4d716",
+        "name": "Runes of Power",
+        "pulse": false,
+        "range": 8,
+        "modelId": "80a11d7f-ee4d-4373-ac2c-44344ce5f78d",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "c6b0fde7-90c1-4a38-b166-0e5e6f05b7c5",
+            "abilityId": "18eb21b3-6714-4a9f-b244-1026bea4d716",
+            "outcomeText": "Target restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "72a6784f-d685-4c8f-906b-c8f5c06398f0",
+            "abilityId": "18eb21b3-6714-4a9f-b244-1026bea4d716",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "49808a16-8b52-48ab-83e8-2b96622e0acc",
+            "abilityId": "18eb21b3-6714-4a9f-b244-1026bea4d716",
+            "outcomeText": " Target suffers X-1 Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      },
+      {
+        "id": "45d78cda-a8c0-4277-b82a-544f2010ebef",
+        "name": "Reading the Runes",
+        "pulse": false,
+        "range": null,
+        "modelId": "80a11d7f-ee4d-4373-ac2c-44344ce5f78d",
+        "energyCost": null,
+        "description": " When this character activates, you may guess a card (colour and number, or Catastrophe) then flip an Arcane Card. If you guessed correctly, apply the following effect:",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a7d88b40-0dbe-462f-be2c-010b8ba26f84",
+            "abilityId": "45d78cda-a8c0-4277-b82a-544f2010ebef",
+            "outcomeText": "All models within 2\" suffer 2 Magical Dmg.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "5133f4b1-2b28-4f52-bab2-c226c5af23c0",
+            "abilityId": "45d78cda-a8c0-4277-b82a-544f2010ebef",
+            "outcomeText": "Choose a friendly Norse model within 8\" to gain [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "2f86b19f-c509-412f-9d89-bbc1c9bd4579",
+            "abilityId": "45d78cda-a8c0-4277-b82a-544f2010ebef",
+            "outcomeText": "Choose a model within 8\" to restore X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "0a732a4d-bb2b-4310-9f72-320e2007f6be",
+            "abilityId": "45d78cda-a8c0-4277-b82a-544f2010ebef",
+            "outcomeText": " Choose a model within 8\" to suffer X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Joanna, Nordic Princess",
+    "arcaneAbilites": [
+      {
+        "id": "956a3f61-c6a3-4a14-b818-d5418bb2dc7a",
+        "name": "Pixie-Elf Elixer",
+        "pulse": false,
+        "range": null,
+        "modelId": "0b7ace83-616b-42f9-ab8e-48ed1a5a32fc",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "d45ac847-5e59-4d4d-afdd-5e00dd601969",
+            "abilityId": "956a3f61-c6a3-4a14-b818-d5418bb2dc7a",
+            "outcomeText": "This character gains X+1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "b5c4e60d-f032-4e50-ace7-078ae15ee855",
+            "abilityId": "956a3f61-c6a3-4a14-b818-d5418bb2dc7a",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "c1f575e5-8248-42a3-9015-000eec91760e",
+        "name": "Revenge of the Forest Friends",
+        "pulse": false,
+        "range": 18,
+        "modelId": "0b7ace83-616b-42f9-ab8e-48ed1a5a32fc",
+        "energyCost": 2,
+        "description": "This attack is not modified by Cover.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "110f297b-5ef3-4c4f-b74f-92583935c07e",
+            "abilityId": "c1f575e5-8248-42a3-9015-000eec91760e",
+            "outcomeText": "Target within 3” of a Tree or Wooded Patch terrain suffers X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "7f01eed2-ee96-4df0-9098-79d441314bef",
+            "abilityId": "c1f575e5-8248-42a3-9015-000eec91760e",
+            "outcomeText": "Target gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kaufman",
+    "arcaneAbilites": [
+      {
+        "id": "855abe76-c63d-459a-93da-9b8219a18f0a",
+        "name": "A Generous Offer",
+        "pulse": false,
+        "range": 2,
+        "modelId": "9da91dfd-68e5-4f5c-98d9-bc763744490b",
+        "energyCost": 1,
+        "description": "This attack is not modified by the evade stat.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "c610b38f-9db8-42ca-a410-677a62dc07b9",
+            "abilityId": "855abe76-c63d-459a-93da-9b8219a18f0a",
+            "outcomeText": "Target model loses possession of one Moonstone it is carrying and this character gains possession of that Moonstone ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 17,
+            "cardColourRequirement": 5
+          },
+          {
+            "id": "71b3eddc-cb10-4ba5-9f74-95a4953ca929",
+            "abilityId": "855abe76-c63d-459a-93da-9b8219a18f0a",
+            "outcomeText": "This model suffers 2 Wds",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Knoll",
+    "arcaneAbilites": [
+      {
+        "id": "15385f9c-fd43-44d0-9620-4f0eb875cd69",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "6c4819b1-9aa8-4689-bb29-9efdecc5d346",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "fe94f940-47db-4a9c-acd7-00c08b4c94a8",
+            "abilityId": "15385f9c-fd43-44d0-9620-4f0eb875cd69",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "4dd526f3-1623-4eb1-8dba-4530a5acfb86",
+            "abilityId": "15385f9c-fd43-44d0-9620-4f0eb875cd69",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "c0bc3b7d-5a5a-4eca-a1d2-8394e6092c07",
+        "name": "Trollish Remedies",
+        "pulse": false,
+        "range": 8,
+        "modelId": "6c4819b1-9aa8-4689-bb29-9efdecc5d346",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "b8a50e3d-74b7-4043-8519-da0bc464197f",
+            "abilityId": "c0bc3b7d-5a5a-4eca-a1d2-8394e6092c07",
+            "outcomeText": "The target suffers 2 Wds and loses 1 energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "eb39c42b-4a1d-436e-94b1-5f123b019c29",
+            "abilityId": "c0bc3b7d-5a5a-4eca-a1d2-8394e6092c07",
+            "outcomeText": "Target Troll gains [Tough as Old Boots: At the start of the Replenish Step this model recovers 2 Wds.], until end of game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "2b035e87-fe90-47ab-90a0-b0041b8143d1",
+            "abilityId": "c0bc3b7d-5a5a-4eca-a1d2-8394e6092c07",
+            "outcomeText": "Target suffers X Wds, then gains +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c24cf653-8e35-440d-89a5-bd2caa315e0a",
+            "abilityId": "c0bc3b7d-5a5a-4eca-a1d2-8394e6092c07",
+            "outcomeText": "Target restores 3X-1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Old Calders",
+    "arcaneAbilites": [
+      {
+        "id": "25a602de-6c57-4a72-8374-d40772f0e359",
+        "name": "Field Medic",
+        "pulse": false,
+        "range": 4,
+        "modelId": "04db53c8-46bf-4d7c-9fbe-efe98959bfbe",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "e4bb6db7-861d-4215-acba-c43689df5d19",
+            "abilityId": "25a602de-6c57-4a72-8374-d40772f0e359",
+            "outcomeText": "Target Soldier or Noble restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "375973be-a213-451c-81ef-270ba66cb358",
+            "abilityId": "25a602de-6c57-4a72-8374-d40772f0e359",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Butterfingers",
+    "arcaneAbilites": [
+      {
+        "id": "d802278a-5dd5-47e3-9c28-91203d23a889",
+        "name": "Butterfingers",
+        "pulse": false,
+        "range": null,
+        "modelId": "b97c6f86-e76b-4a6c-b5ad-c013e79bfca4",
+        "energyCost": null,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "d0c45625-77fa-4464-9d9d-27cf97feb106",
+            "abilityId": "d802278a-5dd5-47e3-9c28-91203d23a889",
+            "outcomeText": "Target loses possession of 1 Moonstone they are carrying. Place it in base contact with the target with a depth value of ‘1’.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 42,
+            "cardColourRequirement": 7
+          },
+          {
+            "id": "2f5c9170-779f-4f91-bce9-4d10fbb517ad",
+            "abilityId": "d802278a-5dd5-47e3-9c28-91203d23a889",
+            "outcomeText": "This model discards all energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "fcf082c4-2074-4a25-af9f-0140241ad089",
+        "name": "Fizzle-Pop",
+        "pulse": false,
+        "range": 6,
+        "modelId": "b97c6f86-e76b-4a6c-b5ad-c013e79bfca4",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "c80d89a6-4db0-4704-a4af-f532a56cfc71",
+            "abilityId": "fcf082c4-2074-4a25-af9f-0140241ad089",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "352a593a-eb11-45e1-abc8-6e795b0a265f",
+            "abilityId": "fcf082c4-2074-4a25-af9f-0140241ad089",
+            "outcomeText": "Target suffers X Magical Dmg then is moved 1” directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Billy",
+    "arcaneAbilites": [
+      {
+        "id": "b2575808-72b1-42e4-b008-9cd4b5cd6d77",
+        "name": "Ramming Speed",
+        "pulse": false,
+        "range": 6,
+        "modelId": "788fc810-6d12-4523-b33d-1a18d75b77a8",
+        "energyCost": 3,
+        "description": "Move this model 6” directly towards target enemy model. If base contact is made with the target, flip an arcane card. The target suffers X+1 Impact Dmg then is moved X” directly away, where X is the value of the flipped card.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "c5aa66d0-7aa5-404d-af10-591abf7e95f8",
+            "abilityId": "b2575808-72b1-42e4-b008-9cd4b5cd6d77",
+            "outcomeText": "The target model suffers no damage and may move up to 3”.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "913bcb80-3481-4817-8d5f-6963a47355ec",
+        "name": "High-ho Silver",
+        "pulse": false,
+        "range": null,
+        "modelId": "788fc810-6d12-4523-b33d-1a18d75b77a8",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "95729328-2a8d-4e9c-9691-ac9b6ba8d1d3",
+            "abilityId": "913bcb80-3481-4817-8d5f-6963a47355ec",
+            "outcomeText": "Move this model 2X”.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 51,
+            "cardColourRequirement": 5
+          },
+          {
+            "id": "2d29e883-edd6-453a-b60e-12dc819480fa",
+            "abilityId": "913bcb80-3481-4817-8d5f-6963a47355ec",
+            "outcomeText": " This model cannot move or be moved until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beaky Bobby",
+    "arcaneAbilites": [
+      {
+        "id": "14f439ef-d36d-4007-be1e-23ddc384f059",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "082047de-da92-4608-8fae-9edc1d220d61",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a700290a-1eee-4167-bb40-449b3ccdf8ce",
+            "abilityId": "14f439ef-d36d-4007-be1e-23ddc384f059",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "5722f5b2-c187-422b-8b30-5ec2b6446d02",
+            "abilityId": "14f439ef-d36d-4007-be1e-23ddc384f059",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Belladonna",
+    "arcaneAbilites": [
+      {
+        "id": "7b21d1d9-d4ae-4e50-b89a-d248a6647c90",
+        "name": "Acid Flask",
+        "pulse": false,
+        "range": 4,
+        "modelId": "e6581470-9ac9-46ea-8efb-b8d4379eba11",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ab5fd2ac-f6d6-4fd5-bcca-bfd4fc28ae7e",
+            "abilityId": "7b21d1d9-d4ae-4e50-b89a-d248a6647c90",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "a050ab5b-bef3-4332-a36c-2a1338aad348",
+            "abilityId": "7b21d1d9-d4ae-4e50-b89a-d248a6647c90",
+            "outcomeText": "Target suffers X+1 Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "57a00a2a-258b-44a5-adfa-05bbe8013b25",
+        "name": "Drop of Nightshade",
+        "pulse": false,
+        "range": 1,
+        "modelId": "e6581470-9ac9-46ea-8efb-b8d4379eba11",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "631e2003-f432-4567-815c-2c9946f41e2d",
+            "abilityId": "57a00a2a-258b-44a5-adfa-05bbe8013b25",
+            "outcomeText": "Target enemy loses X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "11aa0410-815e-42bb-a9a8-d771fa97f26f",
+            "abilityId": "57a00a2a-258b-44a5-adfa-05bbe8013b25",
+            "outcomeText": "Target enemy suffers X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "6c162f2c-3eb2-4b67-aacb-ae6831be1ae7",
+            "abilityId": "57a00a2a-258b-44a5-adfa-05bbe8013b25",
+            "outcomeText": "Move target enemy up to 2X”. Then you may have the target take a Melee Attack action controlled by you. They count as friendly during the Melee attack action.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "921ca3c4-ed04-418f-bc5d-8a5e77822c86",
+            "abilityId": "57a00a2a-258b-44a5-adfa-05bbe8013b25",
+            "outcomeText": "The target and this character are both slain.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Boom Boom Mc Boom",
+    "arcaneAbilites": [
+      {
+        "id": "3b30d207-d2c3-422a-aa42-317e764b57e9",
+        "name": "Blunderbuss",
+        "pulse": false,
+        "range": 4,
+        "modelId": "b876c0b1-5ba2-4c4b-b05b-eb2eec4adef7",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2688938a-fd09-4623-9148-3af7ee8cc329",
+            "abilityId": "3b30d207-d2c3-422a-aa42-317e764b57e9",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "5a40df43-d786-4cca-b615-0611700c6790",
+            "abilityId": "3b30d207-d2c3-422a-aa42-317e764b57e9",
+            "outcomeText": "Target suffers X Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 60,
+            "cardColourRequirement": 3
+          }
+        ]
+      },
+      {
+        "id": "1cf89ed3-682e-45f7-8c9e-b548e42b91ed",
+        "name": "You’ll never get this! Nah-na-na-na!",
+        "pulse": false,
+        "range": 10,
+        "modelId": "b876c0b1-5ba2-4c4b-b05b-eb2eec4adef7",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a2c3dfef-6079-4be5-85ea-dfa9fbfe56fc",
+            "abilityId": "1cf89ed3-682e-45f7-8c9e-b548e42b91ed",
+            "outcomeText": "Move target enemy model 2X” directly towards this model.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "f7ebea4f-86cb-4c85-be44-25286bd20302",
+            "abilityId": "1cf89ed3-682e-45f7-8c9e-b548e42b91ed",
+            "outcomeText": "Target model is moved by your opponent 4”.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Boulder",
+    "arcaneAbilites": [
+      {
+        "id": "81c8c023-4487-44fd-81c5-08480895fd21",
+        "name": "Stone Song",
+        "pulse": false,
+        "range": 6,
+        "modelId": "ebdc6f24-77ac-4544-b3b4-4d57bfca00e7",
+        "energyCost": 1,
+        "description": "This ability is not modified by Cover",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "487fa16f-e77a-4dd6-8a23-5ad139aac0b3",
+            "abilityId": "81c8c023-4487-44fd-81c5-08480895fd21",
+            "outcomeText": "The resisting player sets the depth value of the target Moonstone to a number of their choice.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "918b7038-a19e-4c61-a0c6-37a8421864ad",
+            "abilityId": "81c8c023-4487-44fd-81c5-08480895fd21",
+            "outcomeText": "Decrease target Moonstone's depth value by X, to a minimum of 1.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bristlenose",
+    "arcaneAbilites": [
+      {
+        "id": "d238f530-0a46-4054-88de-ec887eb510ac",
+        "name": "Vomit",
+        "pulse": false,
+        "range": 4,
+        "modelId": "f99da925-6af3-4c7a-8c52-0d4aab0ed8af",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "232a06cb-372b-4490-a162-bf510d9cee64",
+            "abilityId": "d238f530-0a46-4054-88de-ec887eb510ac",
+            "outcomeText": "Target character suffers X+1 Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "41349157-c467-4fec-8908-e269dea2e88c",
+            "abilityId": "d238f530-0a46-4054-88de-ec887eb510ac",
+            "outcomeText": " This models suffers 3 Wds. ",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eric, the Enlightened",
+    "arcaneAbilites": [
+      {
+        "id": "b894603a-f26a-4381-b3f6-d034ca03dcfd",
+        "name": "Enchanted Bladestorm",
+        "pulse": false,
+        "range": 6,
+        "modelId": "8cf109c7-e239-419c-ac98-4cf2eec125d0",
+        "energyCost": 2,
+        "description": "This attack is not modified by Evade Stat or Cover and may only\nbe used if this model has the Enchanted Javelin ability.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b9640961-eba4-4ab8-9fb1-d6f6084a508d",
+            "abilityId": "b894603a-f26a-4381-b3f6-d034ca03dcfd",
+            "outcomeText": "If this character has the Enchanted Javelin ability, the target gains it and this model loses it, both until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "9c9ac3d7-ed7c-4560-923f-197863d647bb",
+            "abilityId": "b894603a-f26a-4381-b3f6-d034ca03dcfd",
+            "outcomeText": "Target suffers X+1 Piercing Dmg. After resolving this action, this model loses Enchanted Javelin until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "5ecfa3ac-ad21-4503-9597-cb5929614394",
+            "abilityId": "b894603a-f26a-4381-b3f6-d034ca03dcfd",
+            "outcomeText": "This character may discard 2 energy. If it does, all other models within 4\" suffer X+1 Piercing Dmg then are moved X\" directly away. Then, after resolving this action, this model loses Enchanted Javelin until end of game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Firespitter",
+    "arcaneAbilites": [
+      {
+        "id": "e788a6af-e7cd-4bd6-9d8c-6a9a0210bf0c",
+        "name": "Fireblast",
+        "pulse": false,
+        "range": 8,
+        "modelId": "2755e8c0-3a45-46cc-b050-c7f511a03e66",
+        "energyCost": 2,
+        "description": "This ability cannot be used while this model is engaged.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "8bbf8ca9-a912-4475-bebf-6dbc018a34e4",
+            "abilityId": "e788a6af-e7cd-4bd6-9d8c-6a9a0210bf0c",
+            "outcomeText": "This ability cannot be used for the remainder of the game. All models within a 3” pulse suffer 4 magical Dmg.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "0defbd6d-c678-4da9-9469-842a8b8d5bfe",
+            "abilityId": "e788a6af-e7cd-4bd6-9d8c-6a9a0210bf0c",
+            "outcomeText": "Target character suffers 2X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flintlock",
+    "arcaneAbilites": [
+      {
+        "id": "7eefdca7-4f5d-4d4b-9b5b-291f38390ed3",
+        "name": "Shoot Musket",
+        "pulse": false,
+        "range": 12,
+        "modelId": "cca09e19-94cd-4491-bf78-f8e86c008c95",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9bfc75ec-aade-4048-b330-c2763abe6227",
+            "abilityId": "7eefdca7-4f5d-4d4b-9b5b-291f38390ed3",
+            "outcomeText": "Target suffers X+2 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "ceab5aab-52e5-493b-8001-9820a54462c7",
+            "abilityId": "7eefdca7-4f5d-4d4b-9b5b-291f38390ed3",
+            "outcomeText": "This model suffers 2 Wds and the Reload ability cannot be used for the remainder of the game.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fraya",
+    "arcaneAbilites": [
+      {
+        "id": "59eb155f-2374-4fca-a598-4a7b53b92946",
+        "name": "Dizzy Spell",
+        "pulse": false,
+        "range": 6,
+        "modelId": "ddae4569-c206-464c-a824-9099aed5a9d2",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "8a0de737-8002-4ddb-9be8-5313eeb56e61",
+            "abilityId": "59eb155f-2374-4fca-a598-4a7b53b92946",
+            "outcomeText": "Target loses one Active Ability of your choice until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "8ee00bbf-9436-4004-a625-03df75f96785",
+            "abilityId": "59eb155f-2374-4fca-a598-4a7b53b92946",
+            "outcomeText": "This model suffers 1 Wd.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "f113a428-31f8-45b6-9a07-979404d0e55b",
+        "name": "Fizzle-Pop",
+        "pulse": false,
+        "range": 6,
+        "modelId": "ddae4569-c206-464c-a824-9099aed5a9d2",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9987281d-c22e-44b5-b707-f170ef5c7a26",
+            "abilityId": "f113a428-31f8-45b6-9a07-979404d0e55b",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "e04bd6e8-9e02-4bbc-89e8-040d5dcfa420",
+            "abilityId": "f113a428-31f8-45b6-9a07-979404d0e55b",
+            "outcomeText": "Target suffers X Magical Dmg then is moved 1” directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      },
+      {
+        "id": "69dcec6a-a6b5-4ec2-bfad-3dcb250a8e00",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "ddae4569-c206-464c-a824-9099aed5a9d2",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "eaa72691-c4a4-474d-bea9-4c712c3d27dc",
+            "abilityId": "69dcec6a-a6b5-4ec2-bfad-3dcb250a8e00",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "e32dc2f2-8738-4c99-8701-dc3a524bc6da",
+            "abilityId": "69dcec6a-a6b5-4ec2-bfad-3dcb250a8e00",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fritz",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Gradock",
+    "arcaneAbilites": [
+      {
+        "id": "f52d50a8-73e9-423a-aa14-a3b61b3a45fb",
+        "name": "Snare Traps",
+        "pulse": false,
+        "range": 14,
+        "modelId": "46c6c7be-c12b-443c-91b2-691470a09e1e",
+        "energyCost": 2,
+        "description": "This attack is not modified by Evade Stat or Cover.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "7cda85b6-4bc6-4df1-854c-9befab62280d",
+            "abilityId": "f52d50a8-73e9-423a-aa14-a3b61b3a45fb",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "d958f01b-f44c-4af6-a8a2-f194661de5a1",
+            "abilityId": "f52d50a8-73e9-423a-aa14-a3b61b3a45fb",
+            "outcomeText": "Targets suffers X Piercing Dmg",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grub",
+    "arcaneAbilites": [
+      {
+        "id": "60bc8e43-0b38-4d84-820f-68bf00c44eb7",
+        "name": "Bug Spray",
+        "pulse": false,
+        "range": 2,
+        "modelId": "ad5e2a3d-29f6-4205-b8ff-238508b6b7d8",
+        "energyCost": 2,
+        "description": "This attack is not modified by Evade Stat or Cover.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "09507076-aa19-4ac1-8b1a-dacf4335129e",
+            "abilityId": "60bc8e43-0b38-4d84-820f-68bf00c44eb7",
+            "outcomeText": "Target suffers X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "c2cfeeeb-f891-45b5-b9c5-70eb43bf1b86",
+            "abilityId": "60bc8e43-0b38-4d84-820f-68bf00c44eb7",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mama Gimble",
+    "arcaneAbilites": [
+      {
+        "id": "8300cb65-1db2-4f13-846c-ee8e2df18cb2",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "1f3c8b13-3b58-49ae-aa05-4c6f66ed06ef",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "f68db518-d3e8-4458-a6b5-05bd094b2a8c",
+            "abilityId": "8300cb65-1db2-4f13-846c-ee8e2df18cb2",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "57efdf44-f6df-4e06-a514-65779b22c607",
+            "abilityId": "8300cb65-1db2-4f13-846c-ee8e2df18cb2",
+            "outcomeText": " Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Morris",
+    "arcaneAbilites": [
+      {
+        "id": "0c19bf62-9f5d-44a8-a04b-9c09074103ec",
+        "name": "Sink Hole",
+        "pulse": false,
+        "range": 8,
+        "modelId": "1f89796e-3057-4ac6-884e-ffdaae869948",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b5e94ee2-cd96-436d-9125-db9a453ba504",
+            "abilityId": "0c19bf62-9f5d-44a8-a04b-9c09074103ec",
+            "outcomeText": "Target suffers X Wds and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "dd71088c-ff55-4add-8671-79ea83cd7e4f",
+            "abilityId": "0c19bf62-9f5d-44a8-a04b-9c09074103ec",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Natty, Slum Thief",
+    "arcaneAbilites": [
+      {
+        "id": "ca685d5f-80bf-4f83-bd0e-79aa691805df",
+        "name": "Slingshot",
+        "pulse": false,
+        "range": 6,
+        "modelId": "14aa356c-908a-4e97-a3d8-c59823a3ac74",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "492d008f-4b00-4bf6-8238-0301502e5575",
+            "abilityId": "ca685d5f-80bf-4f83-bd0e-79aa691805df",
+            "outcomeText": "Target suffers X Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "5d9b9893-4170-4bea-ad25-2852adfdf41d",
+            "abilityId": "ca685d5f-80bf-4f83-bd0e-79aa691805df",
+            "outcomeText": " This character loses the Look of Innocence and Disappear in a Crowd abilities and is Evade Stat +1 until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Raegan, Leshavult Priestess",
+    "arcaneAbilites": [
+      {
+        "id": "109e2087-e26d-49fb-8928-8eaebe07f3be",
+        "name": "Verdant Growth",
+        "pulse": false,
+        "range": null,
+        "modelId": "24192bfb-2cab-42d0-bb27-302c19f7fb7b",
+        "energyCost": 2,
+        "description": "",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2d95a1fe-5bcd-4b57-a850-303bf72cbbf2",
+            "abilityId": "109e2087-e26d-49fb-8928-8eaebe07f3be",
+            "outcomeText": "Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "ffb02579-ab90-4aa5-84c1-cbdcd29f9740",
+            "abilityId": "109e2087-e26d-49fb-8928-8eaebe07f3be",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "fa1eba77-de94-4f6f-be9b-ec724f16026e",
+        "name": "Malachite Ritual",
+        "pulse": false,
+        "range": 8,
+        "modelId": "24192bfb-2cab-42d0-bb27-302c19f7fb7b",
+        "energyCost": 3,
+        "description": "Whilst resolving, ignore passive abilities of other characters. ",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ac9cd5f9-b8ed-404c-9932-731ae65cacd3",
+            "abilityId": "fa1eba77-de94-4f6f-be9b-ec724f16026e",
+            "outcomeText": "Target within 2” of a Tree or Wooded Patch gains X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "7f22c251-3649-494c-88fa-e38627a17a33",
+            "abilityId": "fa1eba77-de94-4f6f-be9b-ec724f16026e",
+            "outcomeText": "Target non-Spirit heals X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "93b3566f-0906-4f0c-affa-2071a98f3ff2",
+            "abilityId": "fa1eba77-de94-4f6f-be9b-ec724f16026e",
+            "outcomeText": " Target suffers X Wds. Spirits suffer an additional 1 Wd.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "a64e153d-06fe-48a4-a10c-db5d0185581a",
+            "abilityId": "fa1eba77-de94-4f6f-be9b-ec724f16026e",
+            "outcomeText": "This model and Spirits within 6\" suffer 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ribald",
+    "arcaneAbilites": [
+      {
+        "id": "8a27f66e-2f4f-48f4-add4-2a4fc1703377",
+        "name": "Fire Cannon!",
+        "pulse": false,
+        "range": 8,
+        "modelId": "e18c4371-180d-4027-9beb-ea06aca9076c",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2b1faae5-b593-4e60-9eb5-5745ac1d6c85",
+            "abilityId": "8a27f66e-2f4f-48f4-add4-2a4fc1703377",
+            "outcomeText": "Target character suffers 3X-1 Impact Dmg then is moved X\" directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "be365ea9-2fcd-4f17-87e6-844e992684ba",
+            "abilityId": "8a27f66e-2f4f-48f4-add4-2a4fc1703377",
+            "outcomeText": "This model suffers 3 Wds. All other models within 2” suffer 3 Magical Dmg then are moved 1\" directly away.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ruwt",
+    "arcaneAbilites": [
+      {
+        "id": "8fde081a-f63d-413d-bf64-e5647a23a2ed",
+        "name": "Verdant Growth",
+        "pulse": false,
+        "range": null,
+        "modelId": "6436abc0-85f9-4cf0-a576-711bf51e53f1",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "13ceedaf-8f2a-4dd9-b887-06fc797e686c",
+            "abilityId": "8fde081a-f63d-413d-bf64-e5647a23a2ed",
+            "outcomeText": "Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until the end of the game. A Maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "bd1edf3a-c8dc-46ad-b059-a2a397ae0eaa",
+            "abilityId": "8fde081a-f63d-413d-bf64-e5647a23a2ed",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sir Guillemot Poppycock",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Snag",
+    "arcaneAbilites": [
+      {
+        "id": "7a910ec3-c6b6-4b4f-9839-0e3fc59b4ccc",
+        "name": "Deadwood Curse",
+        "pulse": false,
+        "range": 8,
+        "modelId": "843f65fc-1dec-490d-8dd7-2087927f6ef1",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ad663b9f-1448-4e71-a615-e7e8db510d9d",
+            "abilityId": "7a910ec3-c6b6-4b4f-9839-0e3fc59b4ccc",
+            "outcomeText": "Target gains [Deadwood Cursed: During the Discard Step, this character and all models friendly to this character within 3\" suffer 1 Wd.], until this character is slain.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "5e4a7a49-7e33-4cff-b4a9-a6865f0a6859",
+            "abilityId": "7a910ec3-c6b6-4b4f-9839-0e3fc59b4ccc",
+            "outcomeText": "This character suffers 2 Wds. All other models within 3\" suffer 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Swash",
+    "arcaneAbilites": [
+      {
+        "id": "27280590-5108-4dbb-b5df-e41a93de9ea5",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "05a42b1f-a962-47ad-be9b-b564b4239b0d",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ee79e271-5e16-43be-a555-5e42c0c764ee",
+            "abilityId": "27280590-5108-4dbb-b5df-e41a93de9ea5",
+            "outcomeText": "Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "26fe297a-233b-406a-a9f7-9da7e02aa6f9",
+            "abilityId": "27280590-5108-4dbb-b5df-e41a93de9ea5",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Beast",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "The Duchess",
+    "arcaneAbilites": [
+      {
+        "id": "ed6d692e-f447-4a1c-a6d8-fda39ffe8113",
+        "name": "Succubus",
+        "pulse": false,
+        "range": 8,
+        "modelId": "b711afd2-11ef-4214-a2f8-38dbf8ebf054",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9e15ba22-c52e-481d-9b5b-f371b647c5a8",
+            "abilityId": "ed6d692e-f447-4a1c-a6d8-fda39ffe8113",
+            "outcomeText": "Target other character suffers X Wds. Then, for each Wd lost, choose a friendly model within 8\" and LoS of this model to restore 1 Wd and gain 1 energy. The same friendly model may be chosen multiple times.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "1ff1837d-b722-4fb2-9feb-4d6c52f1a37d",
+            "abilityId": "ed6d692e-f447-4a1c-a6d8-fda39ffe8113",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wendigo",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Zorya, Dawn Witch",
+    "arcaneAbilites": [
+      {
+        "id": "7308eb84-5f66-47ab-890c-a2a85ae08930",
+        "name": "Violent Impulse",
+        "pulse": false,
+        "range": null,
+        "modelId": "bf242853-7c92-4cbf-9ec5-aa8a185514d9",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9567c726-6e60-4a3d-ba5d-afdaebefd6db",
+            "abilityId": "7308eb84-5f66-47ab-890c-a2a85ae08930",
+            "outcomeText": "This character's Melee Attacks deal +X Dmg until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "2434eba5-6f8c-47e7-b711-98777e0415f9",
+            "abilityId": "7308eb84-5f66-47ab-890c-a2a85ae08930",
+            "outcomeText": "All characters within 4\" deal +1 Melee Dmg until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Agatha",
+    "arcaneAbilites": [
+      {
+        "id": "1f72b889-0830-4839-881a-919d5d3dc823",
+        "name": "Enticing Offer",
+        "pulse": false,
+        "range": 10,
+        "modelId": "51ae6140-30b0-4d7a-8726-fa060964f44d",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "07a7a28b-255a-4761-83f7-f1cb5b67c35c",
+            "abilityId": "1f72b889-0830-4839-881a-919d5d3dc823",
+            "outcomeText": "Move target 4” directly towards this model",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "799be1f5-ee81-4703-92f8-67196b49f94e",
+            "abilityId": "1f72b889-0830-4839-881a-919d5d3dc823",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "3d0a1c21-dc73-4c41-aed8-b60c0e8d5a9f",
+        "name": "Drink Your Fill",
+        "pulse": false,
+        "range": 2,
+        "modelId": "51ae6140-30b0-4d7a-8726-fa060964f44d",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "bcf07ff2-aa79-418a-85ea-1316d44c34fe",
+            "abilityId": "3d0a1c21-dc73-4c41-aed8-b60c0e8d5a9f",
+            "outcomeText": "Target loses X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "f09a71fb-6dc8-4cd3-9e3d-75e828146ff2",
+            "abilityId": "3d0a1c21-dc73-4c41-aed8-b60c0e8d5a9f",
+            "outcomeText": "Target’s Melee stat is increased by +X until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "ceb4eacb-1155-4c6a-b167-7cae97ea62d8",
+            "abilityId": "3d0a1c21-dc73-4c41-aed8-b60c0e8d5a9f",
+            "outcomeText": "The target loses possession of up to one Moonstone they are carrying (place it in base contact with them with a depth value of '1').",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "015f8a76-cd86-4c73-8c79-383678f6a8c9",
+            "abilityId": "3d0a1c21-dc73-4c41-aed8-b60c0e8d5a9f",
+            "outcomeText": "Target gains X energy and its Arcane stat is reduced by -X until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brother Daniel",
+    "arcaneAbilites": [
+      {
+        "id": "d8aa9278-d5ba-4d88-a3d7-f71808f059e4",
+        "name": "Bell Ringer",
+        "pulse": true,
+        "range": 4,
+        "modelId": "f32527b5-6d3d-408e-ba00-8d048737ca7a",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b24939a7-2cb4-444e-b59c-55b01f48e519",
+            "abilityId": "d8aa9278-d5ba-4d88-a3d7-f71808f059e4",
+            "outcomeText": "All characters within the pulse suffer 1 Wd.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "2bbf01d7-93f0-45c7-b94f-2866ff582c96",
+            "abilityId": "d8aa9278-d5ba-4d88-a3d7-f71808f059e4",
+            "outcomeText": "All friendly characters within the pulse restore X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      },
+      {
+        "id": "8516ecac-50fe-4e08-8bc2-fef3cf0e5239",
+        "name": "The End is Nigh",
+        "pulse": false,
+        "range": null,
+        "modelId": "f32527b5-6d3d-408e-ba00-8d048737ca7a",
+        "energyCost": 4,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "8b569238-69c6-41e9-8b2f-be498bc15fb8",
+            "abilityId": "8516ecac-50fe-4e08-8bc2-fef3cf0e5239",
+            "outcomeText": "This character's controller must choose either to have him suffer 4 Wds, or be Removed from Play.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "3008e62c-0529-4b0a-b47e-9205f2462a20",
+            "abilityId": "8516ecac-50fe-4e08-8bc2-fef3cf0e5239",
+            "outcomeText": "Choose a model within 3\" and LoS of this character. Then choose another model within 3X\" and LoS of this character. Place the first model within 3\" of the second model.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Seasick Stu",
+    "arcaneAbilites": [
+      {
+        "id": "8386a435-ccd3-43ac-862c-91a85ae3e626",
+        "name": "Seasick",
+        "pulse": false,
+        "range": 6,
+        "modelId": "a2a17fec-e781-43c9-90ea-f342da0ae52c",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "68706ee7-c643-40b8-a04f-889a577c7497",
+            "abilityId": "8386a435-ccd3-43ac-862c-91a85ae3e626",
+            "outcomeText": "This model suffers 2 Wds and loses all energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "14cf33d8-b71b-4772-a2b8-84c58ce6e905",
+            "abilityId": "8386a435-ccd3-43ac-862c-91a85ae3e626",
+            "outcomeText": "Target loses X energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "142a0506-adee-4cfc-9f29-0b16b6db208d",
+        "name": "Rough Tides",
+        "pulse": false,
+        "range": 6,
+        "modelId": "a2a17fec-e781-43c9-90ea-f342da0ae52c",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "6f6b2be6-8e79-4757-a56b-783319a9bf9d",
+            "abilityId": "142a0506-adee-4cfc-9f29-0b16b6db208d",
+            "outcomeText": " This model suffers 1 Wd and loses all energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "125c3deb-1ba1-4f5e-a406-df64690d5452",
+            "abilityId": "142a0506-adee-4cfc-9f29-0b16b6db208d",
+            "outcomeText": "Move other target model X” directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Goblin King",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Tabby, the Librarian",
+    "arcaneAbilites": [
+      {
+        "id": "7542a890-94df-464a-97c0-390862b31486",
+        "name": "Energy Syphon",
+        "pulse": false,
+        "range": 8,
+        "modelId": "b8531ea5-65b3-456c-a661-018b2a10f663",
+        "energyCost": 0,
+        "description": "Target a friendly model. Flip an Arcane card and redistribute up to X energy from that model to any combination of models within 8”, where X is the value on the card.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "fbe11b50-1486-4028-b4cb-6eef88e7dddf",
+            "abilityId": "7542a890-94df-464a-97c0-390862b31486",
+            "outcomeText": "The target loses 2 energy and this character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "9dea9c78-2ca8-4f4d-b0dd-f81460d2c829",
+        "name": "Caustic Contract",
+        "pulse": false,
+        "range": 6,
+        "modelId": "b8531ea5-65b3-456c-a661-018b2a10f663",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "3f1ca6df-aa5d-478c-b5f9-0fc60c9fead1",
+            "abilityId": "9dea9c78-2ca8-4f4d-b0dd-f81460d2c829",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "b2348c4b-b691-4048-873a-f0cb8a997d6f",
+            "abilityId": "9dea9c78-2ca8-4f4d-b0dd-f81460d2c829",
+            "outcomeText": "Target model suffers X-1 Wds, then it gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "bdfd2093-9027-4f5a-94d0-acfbf698f4df",
+        "name": "Librarian's Scorn",
+        "pulse": false,
+        "range": 6,
+        "modelId": "b8531ea5-65b3-456c-a661-018b2a10f663",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "44b4b616-5caa-4972-b866-bf445edd14c8",
+            "abilityId": "bdfd2093-9027-4f5a-94d0-acfbf698f4df",
+            "outcomeText": "Move target X” directly away, then it suffers X-1 Wds. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "974b0e3c-95af-4315-9218-f942584fcefb",
+            "abilityId": "bdfd2093-9027-4f5a-94d0-acfbf698f4df",
+            "outcomeText": " This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Muridae",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Swiggarty Swooty",
+    "arcaneAbilites": [
+      {
+        "id": "431ecc59-5443-4ee4-8b18-b46210b19f67",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "d152ceab-9d01-49a7-8173-e7da7bd0d1b2",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "08a631cc-4e51-4120-992b-e42b950c9429",
+            "abilityId": "431ecc59-5443-4ee4-8b18-b46210b19f67",
+            "outcomeText": "Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "7554ac22-8974-4eb6-9536-f7f65716b76d",
+            "abilityId": "431ecc59-5443-4ee4-8b18-b46210b19f67",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "d6f01baf-6b1f-450c-9640-760ddce4d135",
+        "name": "Plunder",
+        "pulse": false,
+        "range": 2,
+        "modelId": "d152ceab-9d01-49a7-8173-e7da7bd0d1b2",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2ca01288-9601-4cff-ace1-59bc5a563dd7",
+            "abilityId": "d6f01baf-6b1f-450c-9640-760ddce4d135",
+            "outcomeText": "Target loses 1 Passive Ability of your choice until the end of turn and this model gains that ability.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "a5cc7dc3-f538-4ba0-aa92-4c898ec5ed1e",
+            "abilityId": "d6f01baf-6b1f-450c-9640-760ddce4d135",
+            "outcomeText": "The resisting player may move this model 2\".",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Anya Bartol",
+    "arcaneAbilites": [
+      {
+        "id": "b8bd77cd-ce4d-46a5-ae2c-4c2466b995be",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "54564d71-f101-497c-8515-4dfdd0ac52ca",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "17f45d40-4e84-438c-99ca-23db6ef10c42",
+            "abilityId": "b8bd77cd-ce4d-46a5-ae2c-4c2466b995be",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "255d30e5-319e-4086-acdd-42dea96abc0b",
+            "abilityId": "b8bd77cd-ce4d-46a5-ae2c-4c2466b995be",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Antonia, Noonday Witch",
+    "arcaneAbilites": [
+      {
+        "id": "c2502b36-826e-4611-8427-206094f05cff",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "34d5c62b-824d-4c5b-9703-24934e51df9d",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "dce12b77-dba9-486d-9933-ca09cb36acb6",
+            "abilityId": "c2502b36-826e-4611-8427-206094f05cff",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "83a8455a-ceb5-45b1-aed3-4cadf7f09d92",
+            "abilityId": "c2502b36-826e-4611-8427-206094f05cff",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "976afac2-919f-4974-a0b6-1fe8382a1fbf",
+        "name": "Candy Apples",
+        "pulse": false,
+        "range": 8,
+        "modelId": "34d5c62b-824d-4c5b-9703-24934e51df9d",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "790b1372-711a-46db-b510-89d1c9b0a8db",
+            "abilityId": "976afac2-919f-4974-a0b6-1fe8382a1fbf",
+            "outcomeText": "Move target 2X\" directly towards this character. Then, if the target is within 2\" of this character they suffer 4 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "e7442d22-0eec-43d5-9d81-889d3f69b291",
+            "abilityId": "976afac2-919f-4974-a0b6-1fe8382a1fbf",
+            "outcomeText": "All models within 4\" suffer 2 Magical Dmg.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "c8e05c50-8474-46f1-bebf-794cfe527bcf",
+        "name": "Visions of the Present",
+        "pulse": false,
+        "range": 6,
+        "modelId": "34d5c62b-824d-4c5b-9703-24934e51df9d",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "9c4729d9-ece1-4e3b-a566-7f8bbe022186",
+            "abilityId": "c8e05c50-8474-46f1-bebf-794cfe527bcf",
+            "outcomeText": "Target suffers an amount of Wds equal to the number of Wds they have currently suffered.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 10,
+            "cardColourRequirement": 6
+          },
+          {
+            "id": "7e0ffc5f-a7f1-4bdb-bd87-4153746340c2",
+            "abilityId": "c8e05c50-8474-46f1-bebf-794cfe527bcf",
+            "outcomeText": "This character suffers an amount of Wds equal to the number of Wd's they have currently suffered",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jobie",
+    "arcaneAbilites": [
+      {
+        "id": "9b37aae1-3e29-4da7-9a67-06a0f2903352",
+        "name": "Second Hand Pistol",
+        "pulse": false,
+        "range": 6,
+        "modelId": "ced3a312-6a90-448c-abb9-8f505ad2a06f",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "20bbea0a-0732-4ff8-9f31-14f1a394bb49",
+            "abilityId": "9b37aae1-3e29-4da7-9a67-06a0f2903352",
+            "outcomeText": "Target other model and this character suffer X Impact Dmg",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "08043d1c-f8db-498c-b162-a2d9bee5d1bb",
+            "abilityId": "9b37aae1-3e29-4da7-9a67-06a0f2903352",
+            "outcomeText": "This character is slain, then the target loses possession of one Moonstone they are carrying. Place it in base contact with the target at depth value of ‘1’.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hoff",
+    "arcaneAbilites": [
+      {
+        "id": "6d4d824e-d654-4a9c-8071-e033fe5e0830",
+        "name": "Hunting Horn",
+        "pulse": false,
+        "range": 8,
+        "modelId": "0fe0c1df-68f4-44fb-b5d0-2d38c8fb796c",
+        "energyCost": 1,
+        "description": "This ability cannot be used while this model is engaged.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "22170355-80ad-401f-9123-66d178d24848",
+            "abilityId": "6d4d824e-d654-4a9c-8071-e033fe5e0830",
+            "outcomeText": "Move target other friendly Faun X+1\".",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "dcc9362f-278e-4b6e-bf8b-f03b250c574e",
+            "abilityId": "6d4d824e-d654-4a9c-8071-e033fe5e0830",
+            "outcomeText": "The target is moved up to 3\" by the resisting\nplayer. ",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gloom",
+    "arcaneAbilites": [
+      {
+        "id": "ef9cb7ca-2e09-47c8-853c-642457a2d598",
+        "name": "Shadow Walk",
+        "pulse": false,
+        "range": null,
+        "modelId": "c3bbc45f-c5e3-4521-98a3-e8d8788f2746",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b4693c57-ba93-4737-91d7-5f0f0f51e97c",
+            "abilityId": "ef9cb7ca-2e09-47c8-853c-642457a2d598",
+            "outcomeText": "Place this model within 2X”.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "d10d296a-849e-4ad3-97f5-16cd57898dcb",
+            "abilityId": "ef9cb7ca-2e09-47c8-853c-642457a2d598",
+            "outcomeText": "The resisting player may place this model within 6\".",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "4cbda4b7-68c6-4bac-823e-5729785cf4bb",
+        "name": "Smothering Darkness",
+        "pulse": false,
+        "range": 6,
+        "modelId": "c3bbc45f-c5e3-4521-98a3-e8d8788f2746",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "67780b6e-7299-4fee-8ab9-edcef966b179",
+            "abilityId": "4cbda4b7-68c6-4bac-823e-5729785cf4bb",
+            "outcomeText": "Target suffers X+1 Magical Dmg and gets -1 Evade Stat until end of turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "418af8d3-6a1d-4ccd-86cf-eda52b4c1f91",
+            "abilityId": "4cbda4b7-68c6-4bac-823e-5729785cf4bb",
+            "outcomeText": "This model suffers 1 Wd and the target gets -2\nEvade Stat until end of turn",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mr Toodles",
+    "arcaneAbilites": [
+      {
+        "id": "82da436c-f60b-4c44-996b-ec2f2afa6f63",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "d23eb6e6-df16-4045-b28a-e789cff5dd24",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "16b90b2b-dd1d-4f9a-aba7-18252bcdd4c3",
+            "abilityId": "82da436c-f60b-4c44-996b-ec2f2afa6f63",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "882adeb8-3528-4e95-b6f4-f5cbd35a8331",
+            "abilityId": "82da436c-f60b-4c44-996b-ec2f2afa6f63",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "280d4f39-d972-4fa0-a0aa-29c649fbdd1c",
+        "name": "Lullaby",
+        "pulse": false,
+        "range": 6,
+        "modelId": "d23eb6e6-df16-4045-b28a-e789cff5dd24",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "a4119334-73f8-41a3-8340-921049fbb461",
+            "abilityId": "280d4f39-d972-4fa0-a0aa-29c649fbdd1c",
+            "outcomeText": "Target model must discard half its energy rounding up, then it restores 2 Wds. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 5,
+            "cardColourRequirement": 6
+          },
+          {
+            "id": "ca512615-b3e9-437b-9202-dffbe9086d85",
+            "abilityId": "280d4f39-d972-4fa0-a0aa-29c649fbdd1c",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "29b4c50c-35e7-44fb-b9c7-7f5326cbd4bd",
+        "name": "Blighted Elixir",
+        "pulse": false,
+        "range": 2,
+        "modelId": "d23eb6e6-df16-4045-b28a-e789cff5dd24",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "60d70e4a-f1ec-4d9e-a255-a4b07f1ad865",
+            "abilityId": "29b4c50c-35e7-44fb-b9c7-7f5326cbd4bd",
+            "outcomeText": "Target is moved X\" directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "54b8a330-1abd-43ab-87c6-624b4635dfb4",
+            "abilityId": "29b4c50c-35e7-44fb-b9c7-7f5326cbd4bd",
+            "outcomeText": "Target gains X-1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "306d0932-b9dd-43c9-a974-fbae12e1bde3",
+            "abilityId": "29b4c50c-35e7-44fb-b9c7-7f5326cbd4bd",
+            "outcomeText": "Target suffers X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c435fe17-9d5c-42c9-8019-3f08a6f9e7f8",
+            "abilityId": "29b4c50c-35e7-44fb-b9c7-7f5326cbd4bd",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "El Capitano",
+    "arcaneAbilites": [
+      {
+        "id": "0e485754-137e-4718-9397-c17c74eea7c5",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "eec4fb7d-3a4b-4ee3-914e-931589531bad",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a82fc3cb-6781-4ea1-8a18-738ae9e43674",
+            "abilityId": "0e485754-137e-4718-9397-c17c74eea7c5",
+            "outcomeText": " Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "eceaf789-6e8f-43e0-b629-9ea3190a970e",
+            "abilityId": "0e485754-137e-4718-9397-c17c74eea7c5",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Loci, Nordic Shipwright",
+    "arcaneAbilites": [
+      {
+        "id": "90cec78e-0aa7-4b92-959f-7739540ba607",
+        "name": "Verdant Growth",
+        "pulse": false,
+        "range": null,
+        "modelId": "355571fa-9c46-4779-afaa-0b6e52624aae",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "4e538d24-9d45-42f5-8aab-5a4a9b5a9ae0",
+            "abilityId": "90cec78e-0aa7-4b92-959f-7739540ba607",
+            "outcomeText": " Place a 50mm Diameter Wooded Patch within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Wooded Patches may be placed by this troupe, if a fourth is placed you must choose and remove a Wooded Patch you created earlier this game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "3cdc15bc-e056-43ff-b183-9bf2be995c1e",
+            "abilityId": "90cec78e-0aa7-4b92-959f-7739540ba607",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "1f582279-20e4-4a08-abe7-3fac36147954",
+        "name": "One with the Wind",
+        "pulse": false,
+        "range": 8,
+        "modelId": "355571fa-9c46-4779-afaa-0b6e52624aae",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a51ab52e-d5b8-4c59-b9d3-40f2fda1d207",
+            "abilityId": "1f582279-20e4-4a08-abe7-3fac36147954",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "3a104671-ed77-41df-b406-32caf982df8c",
+            "abilityId": "1f582279-20e4-4a08-abe7-3fac36147954",
+            "outcomeText": "Move target model X+1\".",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brunhilde",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Chubs",
+    "arcaneAbilites": [
+      {
+        "id": "1a33be0b-8032-424b-938c-e2be13be7094",
+        "name": "Shoot Shortbow",
+        "pulse": false,
+        "range": 8,
+        "modelId": "5be00293-fec6-451a-899e-7874790f1d92",
+        "energyCost": 3,
+        "description": "This ability cannot be used while this model is engaged",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "fe062f3b-f8e1-44f2-9357-15e4cfbb832a",
+            "abilityId": "1a33be0b-8032-424b-938c-e2be13be7094",
+            "outcomeText": "Target suffers X Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "391a4a39-d76e-440e-82ee-76c1b8efa004",
+            "abilityId": "1a33be0b-8032-424b-938c-e2be13be7094",
+            "outcomeText": "This ability cannot be used for the remainder of the game.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "b705f141-8497-48bf-aab8-c920a14e90bb",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "5be00293-fec6-451a-899e-7874790f1d92",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "88410c6b-43c6-4aa4-8b19-40e3230df9c3",
+            "abilityId": "b705f141-8497-48bf-aab8-c920a14e90bb",
+            "outcomeText": "Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "f30bd9c5-100b-4ee2-bed9-412165fa0d8e",
+            "abilityId": "b705f141-8497-48bf-aab8-c920a14e90bb",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Foxglove",
+    "arcaneAbilites": [
+      {
+        "id": "e36b1395-49aa-4f70-a7ca-4fb39479e6da",
+        "name": "Shelter of the Shadowglade",
+        "pulse": false,
+        "range": 6,
+        "modelId": "419761bb-14fc-4e54-a697-c55ac69aaeb0",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "94e7bac0-68db-43f6-9461-88b74edc34d3",
+            "abilityId": "e36b1395-49aa-4f70-a7ca-4fb39479e6da",
+            "outcomeText": "Target gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "a765dbf7-7899-4222-98a8-2f191387d619",
+            "abilityId": "e36b1395-49aa-4f70-a7ca-4fb39479e6da",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "cfab7242-2aec-4bd5-827f-dd16bd25e1d3",
+        "name": "Atrophy",
+        "pulse": false,
+        "range": 6,
+        "modelId": "419761bb-14fc-4e54-a697-c55ac69aaeb0",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "86447d7d-1688-4e3f-8c94-7c1fb2de77fc",
+            "abilityId": "cfab7242-2aec-4bd5-827f-dd16bd25e1d3",
+            "outcomeText": "Target suffers 2X Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "104fede4-7cc5-457b-98ae-3013e394fafc",
+            "abilityId": "cfab7242-2aec-4bd5-827f-dd16bd25e1d3",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jackalope",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Gwendoline, Leshavult Priestess",
+    "arcaneAbilites": [
+      {
+        "id": "ffd664b3-0fb8-4acb-8be5-fbb0987aad9c",
+        "name": "Rejuvenate",
+        "pulse": false,
+        "range": 8,
+        "modelId": "da45d6e6-f44c-4408-9497-8a8f8f3b7c17",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "d7f3d6ae-d464-441f-b4f4-67744fe0588f",
+            "abilityId": "ffd664b3-0fb8-4acb-8be5-fbb0987aad9c",
+            "outcomeText": "Target friendly model restores X+1 Wds, then move it X\".",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "11b48933-e5ad-4b0e-918b-40aa4df2f8b8",
+            "abilityId": "ffd664b3-0fb8-4acb-8be5-fbb0987aad9c",
+            "outcomeText": "The target suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "1a3baf1f-4a2d-45eb-9ce7-95f25e86e6a9",
+        "name": "Ethereal Allure",
+        "pulse": false,
+        "range": 8,
+        "modelId": "da45d6e6-f44c-4408-9497-8a8f8f3b7c17",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "656d6280-fab0-4652-8acf-cf70765a81ba",
+            "abilityId": "1a3baf1f-4a2d-45eb-9ce7-95f25e86e6a9",
+            "outcomeText": "Move target X+2\" directly towards this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "75a130f5-5538-4168-a8c0-f48b403ad826",
+            "abilityId": "1a3baf1f-4a2d-45eb-9ce7-95f25e86e6a9",
+            "outcomeText": " This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jayda",
+    "arcaneAbilites": [
+      {
+        "id": "599830f0-244b-4a8a-a582-d6c63c4ac23b",
+        "name": "Shoot Bow",
+        "pulse": false,
+        "range": 10,
+        "modelId": "d7cb3777-70c7-4a71-a05e-f5890fa7c9dd",
+        "energyCost": 3,
+        "description": "This ability cannot be used while this model is engaged.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "4a6519b3-d704-4677-a0fc-fe431e8f9f13",
+            "abilityId": "599830f0-244b-4a8a-a582-d6c63c4ac23b",
+            "outcomeText": "Target suffers X+1 Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "0823eea5-5bf1-4c7b-bf73-226a7ac2edf7",
+            "abilityId": "599830f0-244b-4a8a-a582-d6c63c4ac23b",
+            "outcomeText": "This ability cannot be used for the remainder of the game. ",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crusty Balboa",
+    "arcaneAbilites": [
+      {
+        "id": "922559d1-ce15-41a7-873a-88f58be4ba74",
+        "name": "Pinch",
+        "pulse": false,
+        "range": 2,
+        "modelId": "cf29e43e-6827-4e61-96af-07f5698b2f6a",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2489cfe2-a866-4ad1-8f69-5b4bffaef9d7",
+            "abilityId": "922559d1-ce15-41a7-873a-88f58be4ba74",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "9995987b-b317-4106-814f-882e3964681b",
+            "abilityId": "922559d1-ce15-41a7-873a-88f58be4ba74",
+            "outcomeText": "Target loses possession of one Moonstone they are carrying and this model gains possession of that Moonstone.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "6552b42e-b76d-433f-809b-14e86a231a8d",
+        "name": "Punch",
+        "pulse": false,
+        "range": 2,
+        "modelId": "cf29e43e-6827-4e61-96af-07f5698b2f6a",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a7a4d875-1e0a-4723-9c6a-7a65e0af069b",
+            "abilityId": "6552b42e-b76d-433f-809b-14e86a231a8d",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "54a3e04d-10db-4b28-8a87-5f0390f65a1a",
+            "abilityId": "6552b42e-b76d-433f-809b-14e86a231a8d",
+            "outcomeText": "Target suffers 2 Impact Dmg. If this character has already used the Pinch ability this turn, increase this Dmg by +1.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 5,
+            "cardColourRequirement": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Klaus",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Diana, Queen of the fae",
+    "arcaneAbilites": [
+      {
+        "id": "3a0a2b3f-70be-47f9-9795-a9e876ca8395",
+        "name": "Feed on Fear",
+        "pulse": false,
+        "range": 6,
+        "modelId": "0f733a5b-05a2-462e-8916-fceedf34e202",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "bb657c85-46e5-4697-87a9-1b679dba88f3",
+            "abilityId": "3a0a2b3f-70be-47f9-9795-a9e876ca8395",
+            "outcomeText": "Target loses X energy. Then distribute that much energy amongst Faerie(s) within 6\" of the target.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "1fce553a-012c-412a-93c1-7941cf416986",
+            "abilityId": "3a0a2b3f-70be-47f9-9795-a9e876ca8395",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "ba719a61-eba5-4584-8d34-e78a4d3b89a4",
+        "name": "Horrifying Visions",
+        "pulse": false,
+        "range": 6,
+        "modelId": "0f733a5b-05a2-462e-8916-fceedf34e202",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "5133aa69-63ad-4a8e-9ce0-6ee796b595cf",
+            "abilityId": "ba719a61-eba5-4584-8d34-e78a4d3b89a4",
+            "outcomeText": "Target suffers X+1 Magical Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "b41527d8-29d8-4f5f-8e06-bc97117adf77",
+            "abilityId": "ba719a61-eba5-4584-8d34-e78a4d3b89a4",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Loubard",
+    "arcaneAbilites": [
+      {
+        "id": "eb60bb43-69d0-48c0-bf27-7001078af46f",
+        "name": "Haul In",
+        "pulse": false,
+        "range": 3,
+        "modelId": "99f443ef-dc99-43e4-b060-1ce0e849c9a0",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2201865e-f952-41f1-ac2f-13f64fdd1f92",
+            "abilityId": "eb60bb43-69d0-48c0-bf27-7001078af46f",
+            "outcomeText": "Move target 2\" directly towards this model.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "63e35f39-756d-4b6e-b3d8-3fb36466ca02",
+            "abilityId": "eb60bb43-69d0-48c0-bf27-7001078af46f",
+            "outcomeText": "This character suffers 3 Wds. Then if this character is not slain all other models within 3\" are moved 2\" directly towards this model.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gnomish Airship",
+    "arcaneAbilites": [
+      {
+        "id": "273e178d-70a8-4cd2-9968-c073ba870aa8",
+        "name": "Bolt Thrower",
+        "pulse": false,
+        "range": 10,
+        "modelId": "ca161ec3-8c53-4143-8d2e-eeba2325a333",
+        "energyCost": 1,
+        "description": "This attack is not modified by Cover.",
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b896b4b0-19c0-4298-9e2a-5147f69bcac2",
+            "abilityId": "273e178d-70a8-4cd2-9968-c073ba870aa8",
+            "outcomeText": "Target suffers X+2 Piercing Dmg then is moved 1\" directly away",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "66c96f33-7877-4a6c-acbf-a7a136c85969",
+            "abilityId": "273e178d-70a8-4cd2-9968-c073ba870aa8",
+            "outcomeText": "This model suffers 2 Wds and this action cannot be used for the remainder of the game.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "db8535fd-d380-42e1-8260-ef141e53aa0d",
+        "name": "Dropping Bombs",
+        "pulse": true,
+        "range": 2,
+        "modelId": "ca161ec3-8c53-4143-8d2e-eeba2325a333",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "25408c32-2a42-406e-931f-0956c55a3500",
+            "abilityId": "db8535fd-d380-42e1-8260-ef141e53aa0d",
+            "outcomeText": "All other models within the pulse suffer X+1 Magical Dmg then are moved X\" directly away.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "526b7e4e-cb35-484d-8d91-4f9fcb192d13",
+            "abilityId": "db8535fd-d380-42e1-8260-ef141e53aa0d",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Boris, The Bunny Summoner",
+    "arcaneAbilites": [
+      {
+        "id": "5e6ddb09-1211-4b38-95d9-7eb4633b1b9d",
+        "name": "Summon a Murder Bunny",
+        "pulse": false,
+        "range": null,
+        "modelId": "5b21b3fd-8c44-4aaa-83d8-b8337242d015",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "f0367571-3995-4991-b63b-a7fd8e1258eb",
+            "abilityId": "5e6ddb09-1211-4b38-95d9-7eb4633b1b9d",
+            "outcomeText": "Place a new friendly Murder Bunny in base contact with this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "4cab5c8e-ad08-4af1-98a9-0982ce7df084",
+            "abilityId": "5e6ddb09-1211-4b38-95d9-7eb4633b1b9d",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "ddcbf53c-6414-485c-9d7e-34362c6cbda5",
+        "name": "Summon the Jackalope",
+        "pulse": false,
+        "range": null,
+        "modelId": "5b21b3fd-8c44-4aaa-83d8-b8337242d015",
+        "energyCost": 5,
+        "description": "This action can only be taken if there is no friendly Jackalope in play.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "54d3b575-9592-4c45-820c-c39eff0c3c41",
+            "abilityId": "ddcbf53c-6414-485c-9d7e-34362c6cbda5",
+            "outcomeText": "This character suffers 3 Wds. Place a new friendly Murder Bunny in base contact.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "44b4e1d4-86db-4f17-a7b0-d87f26d2ada0",
+            "abilityId": "ddcbf53c-6414-485c-9d7e-34362c6cbda5",
+            "outcomeText": "This character suffers 3 Wds. Place a new Jackalope in base contact. It has no energy but is considered a permanent additional character in your troupe and may activate this turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Portly Pete",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Powder Monkey",
+    "arcaneAbilites": [
+      {
+        "id": "f0edddd9-67d2-41fc-841c-5b612af68dc1",
+        "name": "Swig o' rum",
+        "pulse": false,
+        "range": 2,
+        "modelId": "cdb923ab-68a2-45f7-b968-fea1bedddd81",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "94f4d74e-86b9-45e1-b0ef-fbb2c7e6623a",
+            "abilityId": "f0edddd9-67d2-41fc-841c-5b612af68dc1",
+            "outcomeText": "Target restores X+1 Wds and suffers -2 Arcane Stat until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "f82bd238-56cb-41f2-85e6-173c38b9febb",
+            "abilityId": "f0edddd9-67d2-41fc-841c-5b612af68dc1",
+            "outcomeText": "This model suffers 2 Wds and -2 Arcane Stat until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "219b7b74-faba-4959-8b1a-2b2fd84a01c2",
+        "name": "Black Powder Bomb",
+        "pulse": false,
+        "range": 4,
+        "modelId": "cdb923ab-68a2-45f7-b968-fea1bedddd81",
+        "energyCost": 3,
+        "description": "This attack is not modified by Evade Stat",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b714bc6a-8019-4fe3-afe2-5e1cce5dc1f7",
+            "abilityId": "219b7b74-faba-4959-8b1a-2b2fd84a01c2",
+            "outcomeText": "Target suffers X+1 Magical Dmg. Other models within 2\" of the target suffer X Magical Dmg",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "a410d145-5826-4891-a546-f210b9704757",
+            "abilityId": "219b7b74-faba-4959-8b1a-2b2fd84a01c2",
+            "outcomeText": "All models within 2\" suffer 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Striga Anya",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "The Revenant",
+    "arcaneAbilites": [
+      {
+        "id": "0b219fea-8004-4735-bfb0-cf9e085fd633",
+        "name": "Eternal Chill",
+        "pulse": false,
+        "range": 6,
+        "modelId": "057c12d9-97a7-4a2b-b61c-26857f683787",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "74820920-5949-421a-8bd6-a83a330cf655",
+            "abilityId": "0b219fea-8004-4735-bfb0-cf9e085fd633",
+            "outcomeText": " This character restores 1 Wd. The target restores 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "de9eae10-605d-43fb-866c-eb7e538a189b",
+            "abilityId": "0b219fea-8004-4735-bfb0-cf9e085fd633",
+            "outcomeText": "Target suffers X Magical Dmg and gains Slow until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Tax Collector",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Vespa",
+    "arcaneAbilites": [
+      {
+        "id": "b2a67add-0023-4882-81b5-1fb047b4d08a",
+        "name": "Throw Javelin",
+        "pulse": false,
+        "range": 6,
+        "modelId": "4ce2180b-94e6-4da2-a599-efed26981c10",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "cb84b8de-e88d-4ab0-a5f5-07782ab8fda1",
+            "abilityId": "b2a67add-0023-4882-81b5-1fb047b4d08a",
+            "outcomeText": "Target suffers X Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "a7ed5282-9e25-4efe-8d98-8400d55e1abe",
+            "abilityId": "b2a67add-0023-4882-81b5-1fb047b4d08a",
+            "outcomeText": "This character suffers 1 Wd.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Teacake of Torment",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Bjørn",
+    "arcaneAbilites": [
+      {
+        "id": "865e115a-3ed4-4746-a35e-bc092d728898",
+        "name": "Throwing Axe",
+        "pulse": false,
+        "range": 4,
+        "modelId": "347b5285-98a9-44a7-bb2c-d3f262065529",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ef6c0a37-62e1-452b-acf6-17801bad2ecd",
+            "abilityId": "865e115a-3ed4-4746-a35e-bc092d728898",
+            "outcomeText": " Target suffers 2X Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "53f3b90d-6705-4b4a-93f2-c4b8b5ff43ea",
+            "abilityId": "865e115a-3ed4-4746-a35e-bc092d728898",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Creep",
+    "arcaneAbilites": [
+      {
+        "id": "22f14d58-aee6-40bd-b5a0-43498533629a",
+        "name": "Vitality Draw",
+        "pulse": false,
+        "range": 8,
+        "modelId": "fd93b75d-7ad3-4c10-a4e7-922878c66c5a",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "c4cbea02-ce3a-4046-bcc8-03da4cf716e1",
+            "abilityId": "22f14d58-aee6-40bd-b5a0-43498533629a",
+            "outcomeText": "Target loses X energy. A friendly model within 8\" and LoS of this model gains that much energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "b9b58225-469c-4015-9509-f10bfa594e9a",
+            "abilityId": "22f14d58-aee6-40bd-b5a0-43498533629a",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "6cc66bc3-e555-41da-a06b-6a55521dc902",
+        "name": "Incubus",
+        "pulse": false,
+        "range": 8,
+        "modelId": "fd93b75d-7ad3-4c10-a4e7-922878c66c5a",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "04eebd31-4e1b-4899-806b-948d793f8d2c",
+            "abilityId": "6cc66bc3-e555-41da-a06b-6a55521dc902",
+            "outcomeText": "Target enemy suffers X Wds. A friendly model within 8\" and LoS of this model restores that many Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c69c7980-92e0-4235-bfb2-c18c11a8fa09",
+            "abilityId": "6cc66bc3-e555-41da-a06b-6a55521dc902",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dranyer",
+    "arcaneAbilites": [
+      {
+        "id": "2b10a63f-59c4-408b-b9a6-3235423876ab",
+        "name": "Mimic",
+        "pulse": false,
+        "range": null,
+        "modelId": "ace8c93d-bfcd-4fcf-80e3-ecdab5880eb9",
+        "energyCost": 0,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "fcaf7abd-1005-4278-81ca-bc1afe98a393",
+            "abilityId": "2b10a63f-59c4-408b-b9a6-3235423876ab",
+            "outcomeText": "Choose another model within 8\", this model gains one of its keywords until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "526dd1bc-d162-4240-820b-a9795043a523",
+            "abilityId": "2b10a63f-59c4-408b-b9a6-3235423876ab",
+            "outcomeText": "This character, or a model within 4\" which shares a keyword with this character, gains +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "d4d479c6-b535-4137-9fc6-3f64dcb3e5a5",
+            "abilityId": "2b10a63f-59c4-408b-b9a6-3235423876ab",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "37f962aa-9cbe-47eb-9f84-4cd564df10b3",
+        "name": "Cunning",
+        "pulse": false,
+        "range": 8,
+        "modelId": "ace8c93d-bfcd-4fcf-80e3-ecdab5880eb9",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "74182302-6b23-4020-9f08-f67a626e4edb",
+            "abilityId": "37f962aa-9cbe-47eb-9f84-4cd564df10b3",
+            "outcomeText": "Target restores X+1 Wds, then if the target shares a keyword with this character move it X-1\".",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "083585d4-4c61-4db9-b2b4-22e5795d9069",
+            "abilityId": "37f962aa-9cbe-47eb-9f84-4cd564df10b3",
+            "outcomeText": "Target suffers X Magical Dmg, then if the target shares a keyword with this character move it X\"",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "16ec6e65-c121-41dd-8033-6b44e4306981",
+            "abilityId": "37f962aa-9cbe-47eb-9f84-4cd564df10b3",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Friar Flavious",
+    "arcaneAbilites": [
+      {
+        "id": "332d0b15-41e5-4182-8ebc-a5225409abc9",
+        "name": "Healing",
+        "pulse": false,
+        "range": 8,
+        "modelId": "babe0916-3f66-43f4-9ca7-d796ec524322",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "059d7236-9324-41c0-8e1e-7d799ae3173d",
+            "abilityId": "332d0b15-41e5-4182-8ebc-a5225409abc9",
+            "outcomeText": " Target restores X+1 Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "da736997-6577-4b3a-816f-2b5295c6b8e5",
+            "abilityId": "332d0b15-41e5-4182-8ebc-a5225409abc9",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Danica, Dusk Witch  ",
+    "arcaneAbilites": [
+      {
+        "id": "8e509574-1776-413c-a582-ddb95b97d70a",
+        "name": "Puppeteer",
+        "pulse": false,
+        "range": 8,
+        "modelId": "3e744701-d87b-4dd8-9241-70f80c690f3e",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "a01b4d7b-1fc0-4776-a037-1e967e8b2f4b",
+            "abilityId": "8e509574-1776-413c-a582-ddb95b97d70a",
+            "outcomeText": "Target gains [Puppet: When Danica, Dusk Witch is active within 8\" and Line of Sight, she may spend her energy to have this character perform actions available to them, excluding Jog. They count as friendly during the action.], until end of game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "0aa6e918-3716-4dc7-b400-a219e22fdb98",
+            "abilityId": "8e509574-1776-413c-a582-ddb95b97d70a",
+            "outcomeText": " This character suffers 4 Wds. The target gains +2 energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "70fa9a3c-7958-4270-8797-2b94cd8f7d24",
+        "name": "Visions of the Past",
+        "pulse": false,
+        "range": 6,
+        "modelId": "3e744701-d87b-4dd8-9241-70f80c690f3e",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "d4d9cf38-73b2-4c61-8ffa-390064d43eef",
+            "abilityId": "70fa9a3c-7958-4270-8797-2b94cd8f7d24",
+            "outcomeText": "Target restores all Wds and all energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "7d3eed1f-b13a-4742-96cd-8221ad1f0376",
+            "abilityId": "70fa9a3c-7958-4270-8797-2b94cd8f7d24",
+            "outcomeText": "All models within 4\" suffer 2 Wds and gain +1 energy.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gertrude, the Faerie Hunter",
+    "arcaneAbilites": [
+      {
+        "id": "6225e996-bbc4-4678-bafd-3bb667a28e85",
+        "name": "Blunderbuss",
+        "pulse": false,
+        "range": 4,
+        "modelId": "05c9c9b4-debd-444a-83d6-e99c9f1482fc",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "49736ebc-be65-4e34-a289-3ef97d196a22",
+            "abilityId": "6225e996-bbc4-4678-bafd-3bb667a28e85",
+            "outcomeText": "Target suffers X Impact DMG.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 60,
+            "cardColourRequirement": 3
+          },
+          {
+            "id": "0fdc9363-0aef-4cdd-b024-6b52e553ffce",
+            "abilityId": "6225e996-bbc4-4678-bafd-3bb667a28e85",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goblin Airship",
+    "arcaneAbilites": [
+      {
+        "id": "029d5173-e684-4697-bf47-8153641f3e48",
+        "name": "Peashooter",
+        "pulse": false,
+        "range": 8,
+        "modelId": "5b319a3d-d166-433c-8ed6-67265bb3eb29",
+        "energyCost": 1,
+        "description": "This attack is not modified by Cover.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "e3038158-b1b0-472d-9f1c-f57ee187395a",
+            "abilityId": "029d5173-e684-4697-bf47-8153641f3e48",
+            "outcomeText": "Target suffers X Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "88998f2a-2ba1-4672-bc6c-4718046b0bc5",
+            "abilityId": "029d5173-e684-4697-bf47-8153641f3e48",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gump",
+    "arcaneAbilites": [
+      {
+        "id": "43982264-90e4-4798-ab4a-563fddf70bad",
+        "name": "Call of the Woods",
+        "pulse": false,
+        "range": 8,
+        "modelId": "f4e9b54b-bec0-45a0-abc1-99d43007540e",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "7d10e973-d167-4a7f-9e1f-bb5a02d7922b",
+            "abilityId": "43982264-90e4-4798-ab4a-563fddf70bad",
+            "outcomeText": "Move target enemy X+2\" directly towards any friendly Treefolk. Then target suffers 1 Wd for each Wooded Patch within 4\" of it.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "5157ba5f-ef69-4ac4-88c0-77ccd5eedf8f",
+            "abilityId": "43982264-90e4-4798-ab4a-563fddf70bad",
+            "outcomeText": "This model cannot move or be moved and has its melee range increased to 3\" until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kalista, Leshavult Priestess",
+    "arcaneAbilites": [
+      {
+        "id": "ca364d61-7ac8-419a-b32b-bf7856094521",
+        "name": "Leshavit's Caress",
+        "pulse": false,
+        "range": 8,
+        "modelId": "5656cad3-11d7-444b-8ae5-17d7cefc9491",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "3868f184-77ba-4f92-82fb-1d49b1e2c08f",
+            "abilityId": "ca364d61-7ac8-419a-b32b-bf7856094521",
+            "outcomeText": " Target restores X+1 Wds and gains [Protection: The first time this character would suffer Dmg, reduce that Dmg to W], until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "04cd5a36-43f1-4d69-98c1-4080600e3d17",
+            "abilityId": "ca364d61-7ac8-419a-b32b-bf7856094521",
+            "outcomeText": "This character suffers 2 Wds. All other models within 6\" suffer 1 Wd.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Greymair",
+    "arcaneAbilites": [
+      {
+        "id": "863e145d-c996-42bc-a8b6-54bb52d9fba0",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "bbd9fd06-68f8-4d7e-bc48-cc140406d81b",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "12cd0c91-4eef-430e-a347-45b859662f34",
+            "abilityId": "863e145d-c996-42bc-a8b6-54bb52d9fba0",
+            "outcomeText": null,
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "4939ca33-fe52-42f0-82e6-5ea51cbd1053",
+            "abilityId": "863e145d-c996-42bc-a8b6-54bb52d9fba0",
+            "outcomeText": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "09d5e281-a0f6-4880-b604-457172488eff",
+            "abilityId": "863e145d-c996-42bc-a8b6-54bb52d9fba0",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "3c525c86-1900-4cd9-83f4-c70f5e8f37cd",
+        "name": "Summon a Helping Hand",
+        "pulse": false,
+        "range": null,
+        "modelId": "bbd9fd06-68f8-4d7e-bc48-cc140406d81b",
+        "energyCost": 2,
+        "description": "This action cannot bring a character into play if it is already in play.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "ba924c2f-9c36-4174-8353-eb1502113c26",
+            "abilityId": "3c525c86-1900-4cd9-83f4-c70f5e8f37cd",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "b4b7514d-fe9a-4312-a14c-a2d3516a40df",
+            "abilityId": "3c525c86-1900-4cd9-83f4-c70f5e8f37cd",
+            "outcomeText": "Place a new Familiar Psychopomp in base contact with this character. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sen'Ara",
+    "arcaneAbilites": [
+      {
+        "id": "6e42507e-38bd-41d1-b839-94ce5559db4a",
+        "name": "Torrential Surge",
+        "pulse": false,
+        "range": null,
+        "modelId": "f779e449-852b-4f41-9958-ff5110959d9d",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "1b81a1ce-f8d2-4cbb-9448-0f9d0bdd7cf2",
+            "abilityId": "6e42507e-38bd-41d1-b839-94ce5559db4a",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "206ae464-5094-45ea-ba5f-a3d2d2532187",
+            "abilityId": "6e42507e-38bd-41d1-b839-94ce5559db4a",
+            "outcomeText": "Place a 50mm Diameter Water Feature within 3X\" and LoS on open ground. This remains in place until end of game. A maximum of 3 Water Features may be placed by this troupe, if a fourth is placed you must choose and remove a Water Feature you created earlier this game.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      },
+      {
+        "id": "745d2f56-b4c0-4522-aa4c-3ae861a5ad15",
+        "name": "Siren Song",
+        "pulse": false,
+        "range": 12,
+        "modelId": "f779e449-852b-4f41-9958-ff5110959d9d",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "5051ddf0-27ab-47ef-9711-5108168acbbe",
+            "abilityId": "745d2f56-b4c0-4522-aa4c-3ae861a5ad15",
+            "outcomeText": "Move target X+2\" directly towards this model. Then, if the target is within 4\" of a Water Feature it suffers 4 Magical Dmg",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "e51ea249-6c97-45a5-8982-24aa4c50111a",
+            "abilityId": "745d2f56-b4c0-4522-aa4c-3ae861a5ad15",
+            "outcomeText": "The resisting player may move this model 2\".",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Morag",
+    "arcaneAbilites": [
+      {
+        "id": "6d7cba2d-ea8f-479a-818a-7ab26a39f060",
+        "name": "Shadow Stride",
+        "pulse": false,
+        "range": null,
+        "modelId": "3c8cfe38-b441-43d6-98df-5b75439bcffe",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "d9d73a32-5f92-4d5b-83e0-0c3371406596",
+            "abilityId": "6d7cba2d-ea8f-479a-818a-7ab26a39f060",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "276534f4-67e2-4a1c-8f37-cdabd68cc73d",
+            "abilityId": "6d7cba2d-ea8f-479a-818a-7ab26a39f060",
+            "outcomeText": "Place this model within X+1\". ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "debabe85-45d7-4f82-a37a-8ac9c3be81e6",
+        "name": "Hunting Ritual",
+        "pulse": false,
+        "range": 8,
+        "modelId": "3c8cfe38-b441-43d6-98df-5b75439bcffe",
+        "energyCost": 3,
+        "description": "This attack is not modified by Evade Stat.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "2eba3e1c-7681-4d22-8acc-d85d1edbaa39",
+            "abilityId": "debabe85-45d7-4f82-a37a-8ac9c3be81e6",
+            "outcomeText": "Target suffers an amount of Wds equal to half the number of Wds they currently have remaining, rounded up. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "e60f3ded-d4b3-4fe3-a315-34a23de9c9ce",
+            "abilityId": "debabe85-45d7-4f82-a37a-8ac9c3be81e6",
+            "outcomeText": "The target may be moved 4\" by the resisting player.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Igor, the Servant",
+    "arcaneAbilites": [
+      {
+        "id": "aea3b9be-007e-41ce-a8ea-b7df8e1476ff",
+        "name": "Summon the Forgotten King",
+        "pulse": false,
+        "range": null,
+        "modelId": "43aaf65c-8abc-43dc-8e0e-fed2ba15a917",
+        "energyCost": 3,
+        "description": "This action can only be taken if your chosen faction is Shade and there is no friendly Echo of the Forgotten King in play.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "c82d778e-8e95-4a83-8fa0-e7307114c6e6",
+            "abilityId": "aea3b9be-007e-41ce-a8ea-b7df8e1476ff",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "3f1f5c22-3b54-45f8-b92a-a5dd681c72e0",
+            "abilityId": "aea3b9be-007e-41ce-a8ea-b7df8e1476ff",
+            "outcomeText": "Place a new Echo of the Forgotten King in base contact; it is considered a permanent additional character in your troupe and may activate this turn. Then this model is slain.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 32,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "89bbcb84-f48c-4246-987d-a3a2842ad873",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "43aaf65c-8abc-43dc-8e0e-fed2ba15a917",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "4b7ce0e6-d32f-45cd-8eaa-10ee535a7203",
+            "abilityId": "89bbcb84-f48c-4246-987d-a3a2842ad873",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "35f57df2-00de-4ba8-baa6-775984f6750d",
+            "abilityId": "89bbcb84-f48c-4246-987d-a3a2842ad873",
+            "outcomeText": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "4e431983-dcf9-4c8f-85c6-ed58198b0373",
+        "name": "Eternal Servitude",
+        "pulse": false,
+        "range": 4,
+        "modelId": "43aaf65c-8abc-43dc-8e0e-fed2ba15a917",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "1396d3f6-914b-4d5b-ae6d-f310f6f4a9e9",
+            "abilityId": "4e431983-dcf9-4c8f-85c6-ed58198b0373",
+            "outcomeText": " Target Elrich or Noble restores X Wds or gains +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "b7d86c07-8108-4cfd-b025-a53f22a075c8",
+            "abilityId": "4e431983-dcf9-4c8f-85c6-ed58198b0373",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "f2e8543a-01c8-4c1f-a70f-bbc2fa53eab9",
+            "abilityId": "4e431983-dcf9-4c8f-85c6-ed58198b0373",
+            "outcomeText": "Target Human or Noble gains +1 energy.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "3e9d804d-550f-4b77-96a7-6704b699277c",
+            "abilityId": "4e431983-dcf9-4c8f-85c6-ed58198b0373",
+            "outcomeText": "Target Risen or Noble restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abra Cadaverous",
+    "arcaneAbilites": [
+      {
+        "id": "1dc88f2f-f390-42d2-a231-4347050163b6",
+        "name": "Spare Parts",
+        "pulse": false,
+        "range": 4,
+        "modelId": "c1af8ded-b8f4-4bc6-b6e1-99d05c0b818f",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "db19a314-4322-42cf-a31f-f6e3aae09a93",
+            "abilityId": "1dc88f2f-f390-42d2-a231-4347050163b6",
+            "outcomeText": "This model suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "226d03ee-3df9-4185-897a-76ceae8351c8",
+            "abilityId": "1dc88f2f-f390-42d2-a231-4347050163b6",
+            "outcomeText": "Target restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "72913326-c3c2-4b3d-bcba-0a40f6fc88e5",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "c1af8ded-b8f4-4bc6-b6e1-99d05c0b818f",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b3cfbaca-307c-4a9c-a83c-05c8e11f005f",
+            "abilityId": "72913326-c3c2-4b3d-bcba-0a40f6fc88e5",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "32721fdb-7d7e-4204-b02b-b557c9bc3818",
+            "abilityId": "72913326-c3c2-4b3d-bcba-0a40f6fc88e5",
+            "outcomeText": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brave Sir Pidge",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Viktor Petty, Graverobber",
+    "arcaneAbilites": [
+      {
+        "id": "e69d637a-f140-4208-b078-48df7cc6a6a7",
+        "name": "Sink Hole",
+        "pulse": false,
+        "range": 8,
+        "modelId": "8bd17362-47c0-4b68-aea1-8c1fd3fdd1d5",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "81869447-fd61-4dcb-ae8f-5c85ccf274a6",
+            "abilityId": "e69d637a-f140-4208-b078-48df7cc6a6a7",
+            "outcomeText": "Target suffers X Wds and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "de24290a-d2b0-4cb2-811a-942b39ce0f03",
+            "abilityId": "e69d637a-f140-4208-b078-48df7cc6a6a7",
+            "outcomeText": "This character suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jeremy, Lord of the Deep",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Echo of the Forgotten King",
+    "arcaneAbilites": [
+      {
+        "id": "5ee9ac5e-a759-4bb1-b1f2-64565f384e15",
+        "name": "Terrorblast",
+        "pulse": false,
+        "range": 8,
+        "modelId": "014b622a-d049-4a14-b4ae-c959848a93e4",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "ae4c7446-fb0b-4c88-979f-24a55416e3b5",
+            "abilityId": "5ee9ac5e-a759-4bb1-b1f2-64565f384e15",
+            "outcomeText": "This character suffers an amount of Wds equal to the number of Wds it has currently suffered.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "10ae51f7-45fc-464a-8d29-f9ea85dbdbf4",
+            "abilityId": "5ee9ac5e-a759-4bb1-b1f2-64565f384e15",
+            "outcomeText": "Target suffers X+1 Magical Dmg or X+2 Magical damage if the target is not at full health. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Serif",
+    "arcaneAbilites": [
+      {
+        "id": "53021f35-09a2-4751-a85c-ed1dc93f7fc8",
+        "name": "Ancient Crossbow",
+        "pulse": false,
+        "range": 12,
+        "modelId": "0a017529-c64e-4082-ae0f-a06405ba41cf",
+        "energyCost": 2,
+        "description": "This ability cannot be used while this model is engaged.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "b2ae79eb-2fc4-4d8e-8bfb-47007138423e",
+            "abilityId": "53021f35-09a2-4751-a85c-ed1dc93f7fc8",
+            "outcomeText": "This model suffers 2 Wds and loses the A Skele-tonne of Bolts ability until end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "4da9d1b7-4a15-4252-8380-ae5f4330a9bf",
+            "abilityId": "53021f35-09a2-4751-a85c-ed1dc93f7fc8",
+            "outcomeText": "Target suffers X+1 Piercing Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Terrible Musician",
+    "arcaneAbilites": [
+      {
+        "id": "a6493f17-635d-44ff-a593-f5fc98df4860",
+        "name": "Dreadful Din",
+        "pulse": false,
+        "range": 6,
+        "modelId": "01652708-0ada-4456-a03f-6a478da7363f",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "ae33b04d-cac1-41fc-b174-ca004e3ad775",
+            "abilityId": "a6493f17-635d-44ff-a593-f5fc98df4860",
+            "outcomeText": "Target model suffers -1 Arcane Stat until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "950abaf4-1d8a-488b-aa59-bb87e69a886c",
+            "abilityId": "a6493f17-635d-44ff-a593-f5fc98df4860",
+            "outcomeText": "Move target model X\" directly away. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "3497b422-9c36-4ed0-971c-53d9661e07af",
+            "abilityId": "a6493f17-635d-44ff-a593-f5fc98df4860",
+            "outcomeText": "The resisting player may move this model 2\".",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "2ad2472c-c348-44bd-9279-ed4d1e35168f",
+            "abilityId": "a6493f17-635d-44ff-a593-f5fc98df4860",
+            "outcomeText": "Target model suffers -1 Melee Stat until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flay, Bearer of Knowledge",
+    "arcaneAbilites": [
+      {
+        "id": "26ffbf41-3454-473b-8032-2271dbea15d4",
+        "name": "Share the Knowledge",
+        "pulse": false,
+        "range": 2,
+        "modelId": "c7e297e1-8e3e-4f8e-b5f4-b1be146db893",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "b3f67e6e-a09a-4c71-b890-343ef83d92da",
+            "abilityId": "26ffbf41-3454-473b-8032-2271dbea15d4",
+            "outcomeText": "The target's Arcane Stat is reduced by -2 until\nend of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "b5ac8d70-31ba-4113-a683-f67830232de1",
+            "abilityId": "26ffbf41-3454-473b-8032-2271dbea15d4",
+            "outcomeText": "Target model gains +1 Arcane Stat until the end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lampy Darkson",
+    "arcaneAbilites": [
+      {
+        "id": "6f3d3227-f43c-413c-936d-2364a729fb5e",
+        "name": "A Little More Oil...",
+        "pulse": false,
+        "range": null,
+        "modelId": "7014eb34-3d8d-490b-b789-704e4490401e",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "30a2de78-6eb3-43e3-922d-7839ef86d302",
+            "abilityId": "6f3d3227-f43c-413c-936d-2364a729fb5e",
+            "outcomeText": "This character loses the Lampy's Light ability\nuntil end of turn.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "9455f170-5c6a-4277-85d9-6a2082688725",
+            "abilityId": "6f3d3227-f43c-413c-936d-2364a729fb5e",
+            "outcomeText": "Increase the range of Lampy's Light by +X\" until end of turn. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Angerboda",
+    "arcaneAbilites": [
+      {
+        "id": "3a4141a1-1763-41f5-9216-fd82a426f56c",
+        "name": "Eternal Chill",
+        "pulse": false,
+        "range": 6,
+        "modelId": "6b22977d-b28c-481a-8f3e-8386a8df2e9f",
+        "energyCost": 2,
+        "description": "",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "c5f737e4-c940-4f06-86c5-c5a72d70d053",
+            "abilityId": "3a4141a1-1763-41f5-9216-fd82a426f56c",
+            "outcomeText": "Target suffers X Magical Dmg and gains [Slow: This model's Jog actions are limited to 2\"], until end of turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "652375bc-8d55-453a-9b5a-531b6ec92d90",
+            "abilityId": "3a4141a1-1763-41f5-9216-fd82a426f56c",
+            "outcomeText": " This character restores 1 Wd. The target restores 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Viscount de Faulte",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Marley",
+    "arcaneAbilites": [
+      {
+        "id": "83935e35-ea05-4c17-b889-83a685ce6f6d",
+        "name": "Horror",
+        "pulse": false,
+        "range": 8,
+        "modelId": "c1cf0b03-9fb3-4c3c-8cd4-2c6ab03fa190",
+        "energyCost": 3,
+        "description": "If at least one friendly model was slain this turn resolve this attack with +2 Arcane Stat.",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "82d0fb86-b7f1-4926-97ac-41df6ad2397d",
+            "abilityId": "83935e35-ea05-4c17-b889-83a685ce6f6d",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "be41c89a-12eb-460f-a960-65626d64aa77",
+            "abilityId": "83935e35-ea05-4c17-b889-83a685ce6f6d",
+            "outcomeText": "Target gains [Horrified: During the Discard Step, this character suffers 2 Wds.], until this character is slain.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          }
+        ]
+      },
+      {
+        "id": "3e2997bd-b9b0-4980-8e71-fe6a13963c64",
+        "name": "Reanimate",
+        "pulse": false,
+        "range": null,
+        "modelId": "c1cf0b03-9fb3-4c3c-8cd4-2c6ab03fa190",
+        "energyCost": 3,
+        "description": "",
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "6581292d-ec55-413d-a593-b773b69c8729",
+            "abilityId": "3e2997bd-b9b0-4980-8e71-fe6a13963c64",
+            "outcomeText": "Place a friendly slain model in base contact with this model. Restore half its health rounding up. It has no energy but may activate this turn.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "70aeaea9-a028-4842-8c49-8906ced9b672",
+            "abilityId": "3e2997bd-b9b0-4980-8e71-fe6a13963c64",
+            "outcomeText": "This model suffers 4 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jerry Heir",
+    "arcaneAbilites": [
+      {
+        "id": "95ac6cd8-84df-4a76-92da-635a7a2fda9a",
+        "name": "Stage Fright",
+        "pulse": false,
+        "range": 8,
+        "modelId": "f962bc25-6509-4305-b071-d26ba42d7170",
+        "energyCost": 3,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "54ca9ee2-30db-49b3-823f-79729b0d107e",
+            "abilityId": "95ac6cd8-84df-4a76-92da-635a7a2fda9a",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "c547fd72-0287-4392-a2b0-a039b1782e83",
+            "abilityId": "95ac6cd8-84df-4a76-92da-635a7a2fda9a",
+            "outcomeText": " Target enemy without Frightened gains\n[Frightened: At the start of the Discard Step, the player that used Stage Fright flips an Arcane Card then moves this model up to X+1\". Catastrophe: Move 0\"], until this character is slain",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 16,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Roary",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Nanny",
+    "arcaneAbilites": [
+      {
+        "id": "0b885b38-6ecc-474d-87df-ccb5a2254447",
+        "name": "Milkies",
+        "pulse": false,
+        "range": 6,
+        "modelId": "531297f8-fe91-49a2-a3ee-820aeecac6b2",
+        "energyCost": 2,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "57b09f43-b60b-4771-b43b-ad718cfbea09",
+            "abilityId": "0b885b38-6ecc-474d-87df-ccb5a2254447",
+            "outcomeText": "Target friendly character restores X Wds.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 12,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "8500dcf2-c32e-4efd-8726-216544b202da",
+            "abilityId": "0b885b38-6ecc-474d-87df-ccb5a2254447",
+            "outcomeText": "Target friendly character gains +1 energy. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 3,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "c546310f-c13d-4e54-919a-0f992db1a89e",
+            "abilityId": "0b885b38-6ecc-474d-87df-ccb5a2254447",
+            "outcomeText": "The target suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "222a3969-22bb-428b-81e5-3a97ae90cf03",
+        "name": "Summon the Nursery",
+        "pulse": false,
+        "range": null,
+        "modelId": "531297f8-fe91-49a2-a3ee-820aeecac6b2",
+        "energyCost": 1,
+        "description": "This action cannot bring a character into play if it is already in play.",
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "0e48a791-c417-4dab-9034-8c3ac95f0ffd",
+            "abilityId": "222a3969-22bb-428b-81e5-3a97ae90cf03",
+            "outcomeText": "Place a new Sprog in base contact with this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "e453011b-632b-4e10-ba82-a415a9a85071",
+            "abilityId": "222a3969-22bb-428b-81e5-3a97ae90cf03",
+            "outcomeText": "Place a new Pookie in base contact with this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 2
+          },
+          {
+            "id": "6c37a49c-50e2-4e97-9ec4-64a3aa399a50",
+            "abilityId": "222a3969-22bb-428b-81e5-3a97ae90cf03",
+            "outcomeText": "Place a new Urchin in base contact with this character.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 4
+          },
+          {
+            "id": "0f5816ed-6268-458a-92a7-d363e38ec6bf",
+            "abilityId": "222a3969-22bb-428b-81e5-3a97ae90cf03",
+            "outcomeText": "This model and Babelings within 6\" suffer 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      },
+      {
+        "id": "67403389-16e4-42b8-97ac-ee6332e083c9",
+        "name": "Lullaby",
+        "pulse": false,
+        "range": 6,
+        "modelId": "531297f8-fe91-49a2-a3ee-820aeecac6b2",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": false,
+        "oncePerTurn": true,
+        "ArcaneOutcome": [
+          {
+            "id": "c4b3c452-3bf6-4db2-903a-940c1f6e628a",
+            "abilityId": "67403389-16e4-42b8-97ac-ee6332e083c9",
+            "outcomeText": "Target model must discard half its energy rounding up, then it restores 2 Wds. ",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 5,
+            "cardColourRequirement": 6
+          },
+          {
+            "id": "3fad43aa-6b26-4209-b6bb-f42938a9f3aa",
+            "abilityId": "67403389-16e4-42b8-97ac-ee6332e083c9",
+            "outcomeText": "This model suffers 2 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sprog",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Urchin",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Baron Von Fancyhat",
+    "arcaneAbilites": [
+      {
+        "id": "4a4387c1-1943-4705-9ae7-ee02f5dac2d5",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "b0b157e2-3c8e-488d-8d91-e1fb8093a053",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "156340a6-620b-4e20-beac-5ac145af382b",
+            "abilityId": "4a4387c1-1943-4705-9ae7-ee02f5dac2d5",
+            "outcomeText": "Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Claudia Duvel",
+    "arcaneAbilites": [
+      {
+        "id": "92714002-1f5c-4b6d-9f1a-620b3a23b3da",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "617ae5a9-9851-49b1-9eae-f0aaa59bfbab",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "de1aab12-bb42-4401-ba35-5ae109fe3e6d",
+            "abilityId": "92714002-1f5c-4b6d-9f1a-620b3a23b3da",
+            "outcomeText": "Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          },
+          {
+            "id": "c7179e3f-7fc4-4975-928c-9c9c7c762fb7",
+            "abilityId": "92714002-1f5c-4b6d-9f1a-620b3a23b3da",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pookie",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Murder Bunny",
+    "arcaneAbilites": []
+  },
+  {
+    "name": "Commodore Delahaye",
+    "arcaneAbilites": [
+      {
+        "id": "f02717e1-edd7-4279-918f-cde856353ac0",
+        "name": "Shoot Pistol",
+        "pulse": false,
+        "range": 8,
+        "modelId": "8d7f62eb-c809-477a-9351-d47e24e87f99",
+        "energyCost": 1,
+        "description": null,
+        "oncePerGame": true,
+        "oncePerTurn": false,
+        "ArcaneOutcome": [
+          {
+            "id": "7b68d6e7-062e-4e3b-a8f9-6acd753f7d6a",
+            "abilityId": "f02717e1-edd7-4279-918f-cde856353ac0",
+            "outcomeText": "This character suffers 3 Wds.",
+            "catastropheOutcome": true,
+            "cardValueRequirement": 0,
+            "cardColourRequirement": 0
+          },
+          {
+            "id": "241af3ce-f35f-4552-95be-f6f31992be7e",
+            "abilityId": "f02717e1-edd7-4279-918f-cde856353ac0",
+            "outcomeText": "Target suffers X+1 Impact Dmg.",
+            "catastropheOutcome": false,
+            "cardValueRequirement": 48,
+            "cardColourRequirement": 1
+          }
+        ]
+      }
+    ]
+  }
+]
