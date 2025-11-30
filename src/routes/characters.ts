@@ -1,9 +1,51 @@
 import { Hono } from "hono";
-import { charactersQuery } from "../queries/characters";
+import {
+  charactersQuery,
+  doesCharacterHaveKeyword,
+  isCharacterInFaction,
+} from "../queries/characters";
+import z from "zod";
+import { sValidator } from "@hono/standard-validator";
 
 const characters = new Hono();
 
-characters.get("/", async (c) => c.json(await charactersQuery()));
-characters.get("/:id", (c) => c.json(`get ${c.req.param("id")}`));
+const charactersQuerySchema = z.object({
+  name: z.string().optional(),
+  faction: z.string().optional(),
+  keyword: z.string().optional(),
+  fields: z.array(z.string()).optional(),
+});
+
+characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
+  const { name, faction, keyword, fields } = c.req.valid("query");
+
+  let query = charactersQuery();
+
+  if (name !== undefined) {
+    query = query.where(({ eb, fn }) =>
+      eb(fn<string>("lower", ["name"]), "like", `%${name.toLowerCase()}%`)
+    );
+  }
+  if (faction !== undefined) {
+    query = query.where((eb) =>
+      isCharacterInFaction(eb.val(faction), eb.ref("characters.id"))
+    );
+  }
+
+  if (keyword !== undefined) {
+    query = query.where((eb) =>
+      doesCharacterHaveKeyword(eb.val(keyword), eb.ref("characters.id"))
+    );
+  }
+
+  return c.json(await query.execute());
+});
+characters.get("/:id", async (c) =>
+  c.json(
+    await charactersQuery()
+      .where("id", "=", c.req.param("id"))
+      .executeTakeFirst()
+  )
+);
 
 export default characters;

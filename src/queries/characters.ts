@@ -2,6 +2,7 @@ import { db } from "../db";
 import type { DB } from "../db/db";
 import { expressionBuilder, sql, type Expression, type Simplify } from "kysely";
 import { jsonArrayFrom, jsonObjectFrom } from "kysely/helpers/postgres";
+import { concat, lower } from "./helpers";
 
 const jsonStringArrayFrom = <O>(expr: Expression<O>, field: string) =>
   sql<
@@ -41,7 +42,7 @@ export const characterAbilitiesQuery = (
 ) => {
   // Create an expression builder without any tables in the context.
   // This way we make no assumptions about the calling context.
-  const eb = expressionBuilder<DB>();
+  const eb = expressionBuilder<DB, "abilities">();
 
   return eb
     .selectFrom("abilities")
@@ -82,9 +83,7 @@ export const characterAbilitiesQuery = (
 };
 
 export const meleeMoveQuery = (id: Expression<string | null>) => {
-  // Create an expression builder without any tables in the context.
-  // This way we make no assumptions about the calling context.
-  const eb = expressionBuilder<DB>();
+  const eb = expressionBuilder<DB, "meleeMoves">();
 
   return eb
     .selectFrom("meleeMoves as principalMove")
@@ -114,8 +113,50 @@ export const meleeMoveQuery = (id: Expression<string | null>) => {
     ]);
 };
 
-export const charactersQuery = async () =>
-  await db
+export const isCharacterInFaction = (
+  faction: Expression<string>,
+  characterId: Expression<string>
+) => {
+  const eb = expressionBuilder<DB>();
+
+  return eb.exists(
+    eb
+      .selectFrom("charactersToFactions")
+      .select("faction")
+      .where("charactersToFactions.characterId", "=", characterId)
+      .where(({ eb, ref }) =>
+        eb(
+          lower(ref("charactersToFactions.faction")),
+          "like",
+          lower(concat(eb.val("%"), faction, eb.val("%")))
+        )
+      )
+  );
+};
+
+export const doesCharacterHaveKeyword = (
+  keyword: Expression<string>,
+  characterId: Expression<string>
+) => {
+  const eb = expressionBuilder<DB>();
+
+  return eb.exists(
+    eb
+      .selectFrom("charactersToKeywords")
+      .select("keyword")
+      .where("charactersToKeywords.characterId", "=", characterId)
+      .where(({ eb, ref }) =>
+        eb(
+          lower(ref("charactersToKeywords.keyword")),
+          "like",
+          lower(concat(eb.val("%"), keyword, eb.val("%")))
+        )
+      )
+  );
+};
+
+export const charactersQuery = () =>
+  db
     .selectFrom("characters")
     .select((eb) => [
       "id",
@@ -142,5 +183,4 @@ export const charactersQuery = async () =>
       jsonArrayFrom(characterAbilitiesQuery(eb.ref("characters.id"))).as(
         "abilities"
       ),
-    ])
-    .execute();
+    ]);
