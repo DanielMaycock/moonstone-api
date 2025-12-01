@@ -124,7 +124,9 @@ const getArcaneOutcomeCards = (cardValue: number, isCatastrophe: boolean) => {
   // Outcome values
   // 0 - ? Something odd here
   // 3 - X (red)
+  // 4 - 2 (blue)
   // 5 - 2 (blue, red)
+  // 8 - 3 (blue)
   // 10 - 3 (blue, red)
   // 12 - X (blue)
   // 16 - 2 (red, blue, green)
@@ -143,11 +145,15 @@ const getArcaneOutcomeCards = (cardValue: number, isCatastrophe: boolean) => {
       return [{ color: "Placeholder", value: "Placeholder" }];
     case 3:
       return [{ color: "red", value: "X" }];
+    case 4:
+      return [{ color: "blue", value: "2" }];
     case 5:
       return [
         { color: "blue", value: "2" },
         { color: "red", value: "2" },
       ];
+    case 8:
+      return [{ color: "blue", value: "3" }];
     case 10:
       return [
         { color: "blue", value: "3" },
