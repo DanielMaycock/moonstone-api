@@ -9,17 +9,36 @@ import { sValidator } from "@hono/standard-validator";
 
 const characters = new Hono();
 
+const characterQueryFieldSchema = z.literal([
+  "melee",
+  "range",
+  "arcane",
+  "evade",
+  "baseSize",
+  "factions",
+  "keywords",
+  "health",
+  "energy",
+  "headFilename",
+  "signatureMove",
+  "abilities",
+]);
+
+export type CharacterQueryField = z.infer<typeof characterQueryFieldSchema>;
+
 const charactersQuerySchema = z.object({
   name: z.string().optional(),
   faction: z.string().optional(),
   keyword: z.string().optional(),
-  fields: z.array(z.string()).optional(),
+  fields: z.array(characterQueryFieldSchema).optional(),
 });
 
 characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
   const { name, faction, keyword, fields } = c.req.valid("query");
 
-  let query = charactersQuery();
+  let query = charactersQuery(
+    fields !== undefined && fields.length > 0 ? fields : undefined
+  );
 
   if (name !== undefined) {
     query = query.where(({ eb, fn }) =>

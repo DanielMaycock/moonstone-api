@@ -3,6 +3,7 @@ import type { DB } from "../db/db";
 import { expressionBuilder, sql, type Expression, type Simplify } from "kysely";
 import { jsonArrayFrom, jsonObjectFrom } from "kysely/helpers/postgres";
 import { concat, lower } from "./helpers";
+import type { CharacterQueryField } from "../routes/characters";
 
 const jsonStringArrayFrom = <O>(expr: Expression<O>, field: string) =>
   sql<
@@ -155,32 +156,61 @@ export const doesCharacterHaveKeyword = (
   );
 };
 
-export const charactersQuery = () =>
+export const charactersQuery = (fields?: Array<CharacterQueryField>) =>
   db
     .selectFrom("characters")
-    .select((eb) => [
-      "id",
-      "name",
-      "melee",
-      "meleeRange",
-      "arcane",
-      "evade",
-      "health",
-      "energy",
-      "baseSize",
-      "headFilename",
-      jsonStringArrayFrom(
-        characterFactionsQuery(eb.ref("characters.id")),
-        "faction"
-      ).as("factions"),
-      jsonStringArrayFrom(
-        characterKeywordsQuery(eb.ref("characters.id")),
-        "keyword"
-      ).as("keywords"),
-      jsonObjectFrom(meleeMoveQuery(eb.ref("characters.signatureMoveId"))).as(
-        "signatureMove"
-      ),
-      jsonArrayFrom(characterAbilitiesQuery(eb.ref("characters.id"))).as(
-        "abilities"
-      ),
-    ]);
+    .select(["id", "name"])
+    .$if(fields === undefined || fields.includes("melee"), (qb) =>
+      qb.select("melee")
+    )
+    .$if(fields === undefined || fields.includes("range"), (qb) =>
+      qb.select("meleeRange as range")
+    )
+    .$if(fields === undefined || fields.includes("arcane"), (qb) =>
+      qb.select("arcane")
+    )
+    .$if(fields === undefined || fields.includes("evade"), (qb) =>
+      qb.select("evade")
+    )
+    .$if(fields === undefined || fields.includes("health"), (qb) =>
+      qb.select("health")
+    )
+    .$if(fields === undefined || fields.includes("energy"), (qb) =>
+      qb.select("energy")
+    )
+    .$if(fields === undefined || fields.includes("baseSize"), (qb) =>
+      qb.select("baseSize")
+    )
+    .$if(fields === undefined || fields.includes("headFilename"), (qb) =>
+      qb.select("headFilename")
+    )
+    .$if(fields === undefined || fields.includes("factions"), (qb) =>
+      qb.select((eb) => [
+        jsonStringArrayFrom(
+          characterFactionsQuery(eb.ref("characters.id")),
+          "faction"
+        ).as("factions"),
+      ])
+    )
+    .$if(fields === undefined || fields.includes("keywords"), (qb) =>
+      qb.select((eb) => [
+        jsonStringArrayFrom(
+          characterKeywordsQuery(eb.ref("characters.id")),
+          "keyword"
+        ).as("keywords"),
+      ])
+    )
+    .$if(fields === undefined || fields.includes("signatureMove"), (qb) =>
+      qb.select((eb) => [
+        jsonObjectFrom(meleeMoveQuery(eb.ref("characters.signatureMoveId"))).as(
+          "signatureMove"
+        ),
+      ])
+    )
+    .$if(fields === undefined || fields.includes("abilities"), (qb) =>
+      qb.select((eb) => [
+        jsonArrayFrom(characterAbilitiesQuery(eb.ref("characters.id"))).as(
+          "abilities"
+        ),
+      ])
+    );
