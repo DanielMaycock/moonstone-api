@@ -4,33 +4,35 @@ import {
   doesCharacterHaveKeyword,
   isCharacterInFaction,
 } from "../queries/characters";
-import z from "zod";
+import * as v from "valibot";
 import { sValidator } from "@hono/standard-validator";
 
 const characters = new Hono();
 
-const characterQueryFieldSchema = z.literal([
-  "melee",
-  "range",
-  "arcane",
-  "evade",
-  "baseSize",
-  "factions",
-  "keywords",
-  "health",
-  "energy",
-  "headFilename",
-  "signatureMove",
-  "abilities",
+const characterQueryFieldSchema = v.union([
+  v.literal("melee"),
+  v.literal("range"),
+  v.literal("arcane"),
+  v.literal("evade"),
+  v.literal("baseSize"),
+  v.literal("factions"),
+  v.literal("keywords"),
+  v.literal("health"),
+  v.literal("energy"),
+  v.literal("headFilename"),
+  v.literal("signatureMove"),
+  v.literal("abilities"),
 ]);
 
-export type CharacterQueryField = z.infer<typeof characterQueryFieldSchema>;
+export type CharacterQueryField = v.InferOutput<
+  typeof characterQueryFieldSchema
+>;
 
-const charactersQuerySchema = z.object({
-  name: z.string().optional(),
-  faction: z.string().optional(),
-  keyword: z.string().optional(),
-  fields: z.array(characterQueryFieldSchema).optional(),
+const charactersQuerySchema = v.object({
+  name: v.optional(v.string()),
+  faction: v.optional(v.string()),
+  keyword: v.optional(v.string()),
+  fields: v.optional(v.array(characterQueryFieldSchema)),
 });
 
 characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {

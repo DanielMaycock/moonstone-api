@@ -1,20 +1,14 @@
 import { db } from "../db";
 import type { DB } from "../db/db";
-import { expressionBuilder, sql, type Expression, type Simplify } from "kysely";
+import { expressionBuilder, type Expression } from "kysely";
 import { jsonArrayFrom, jsonObjectFrom } from "kysely/helpers/postgres";
-import { concat, lower } from "./helpers";
+import { concat, jsonStringArrayFrom, lower } from "./helpers";
 import type { CharacterQueryField } from "../routes/characters";
-
-const jsonStringArrayFrom = <O>(expr: Expression<O>, field: string) =>
-  sql<
-    Simplify<O>[]
-  >`(select json_agg(to_json(agg)->${field}) from ${expr} as agg)`;
+import { abilitiesQuery } from "./abilities";
 
 export const characterFactionsQuery = (
   characterId: Expression<string | null>
 ) => {
-  // Create an expression builder without any tables in the context.
-  // This way we make no assumptions about the calling context.
   const eb = expressionBuilder<DB>();
 
   return eb
@@ -27,8 +21,6 @@ export const characterFactionsQuery = (
 export const characterKeywordsQuery = (
   characterId: Expression<string | null>
 ) => {
-  // Create an expression builder without any tables in the context.
-  // This way we make no assumptions about the calling context.
   const eb = expressionBuilder<DB>();
 
   return eb
@@ -36,51 +28,6 @@ export const characterKeywordsQuery = (
     .select("charactersToKeywords.keyword")
     .whereRef("charactersToKeywords.characterId", "=", characterId)
     .orderBy("charactersToKeywords.keyword");
-};
-
-export const characterAbilitiesQuery = (
-  characterId: Expression<string | null>
-) => {
-  // Create an expression builder without any tables in the context.
-  // This way we make no assumptions about the calling context.
-  const eb = expressionBuilder<DB, "abilities">();
-
-  return eb
-    .selectFrom("abilities")
-    .whereRef("abilities.characterId", "=", characterId)
-    .select((eb) => [
-      "id",
-      "name",
-      "description",
-      "energyCost",
-      "oncePerGame",
-      "oncePerTurn",
-      "pulse",
-      "range",
-      jsonArrayFrom(
-        eb
-          .selectFrom("arcaneOutcomes")
-          .whereRef("arcaneOutcomes.abilityId", "=", "abilities.id")
-          .select((eb) => [
-            "arcaneOutcomes.id",
-            "arcaneOutcomes.outcomeText",
-            jsonArrayFrom(
-              eb
-                .selectFrom("arcaneOutcomeCards")
-                .whereRef(
-                  "arcaneOutcomeCards.arcaneOutcomeId",
-                  "=",
-                  "arcaneOutcomes.id"
-                )
-                .select([
-                  "arcaneOutcomeCards.color",
-                  "arcaneOutcomeCards.value",
-                  "arcaneOutcomeCards.isCatastrophe",
-                ])
-            ).as("outcomeCards"),
-          ])
-      ).as("arcaneOutcomes"),
-    ]);
 };
 
 export const meleeMoveQuery = (id: Expression<string | null>) => {
@@ -209,8 +156,12 @@ export const charactersQuery = (fields?: Array<CharacterQueryField>) =>
     )
     .$if(fields === undefined || fields.includes("abilities"), (qb) =>
       qb.select((eb) => [
-        jsonArrayFrom(characterAbilitiesQuery(eb.ref("characters.id"))).as(
-          "abilities"
-        ),
+        jsonArrayFrom(
+          abilitiesQuery().whereRef(
+            "abilities.characterId",
+            "=",
+            eb.ref("characters.id")
+          )
+        ).as("abilities"),
       ])
     );
