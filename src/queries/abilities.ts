@@ -6,14 +6,14 @@ export const abilitiesQuery = (
   return db
     .selectFrom("abilities")
     .select((eb) => [
-      "id",
-      "name",
-      "description",
-      "energyCost",
-      "oncePerGame",
-      "oncePerTurn",
-      "pulse",
-      "range",
+      "abilities.id",
+      "abilities.name",
+      "abilities.description",
+      "abilities.energyCost",
+      "abilities.oncePerGame",
+      "abilities.oncePerTurn",
+      "abilities.pulse",
+      "abilities.range",
       jsonArrayFrom(
         eb
           .selectFrom("arcaneOutcomes")

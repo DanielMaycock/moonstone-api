@@ -5,6 +5,7 @@ import { jsonArrayFrom, jsonObjectFrom } from "kysely/helpers/postgres";
 import { concat, jsonStringArrayFrom, lower } from "./helpers";
 import type { CharacterQueryField } from "../routes/characters";
 import { abilitiesQuery } from "./abilities";
+import { meleeMoveQuery } from "./meleeMoves";
 
 export const characterFactionsQuery = (
   characterId: Expression<string | null>
@@ -28,37 +29,6 @@ export const characterKeywordsQuery = (
     .select("charactersToKeywords.keyword")
     .whereRef("charactersToKeywords.characterId", "=", characterId)
     .orderBy("charactersToKeywords.keyword");
-};
-
-export const meleeMoveQuery = (id: Expression<string | null>) => {
-  const eb = expressionBuilder<DB, "meleeMoves">();
-
-  return eb
-    .selectFrom("meleeMoves as principalMove")
-    .whereRef("principalMove.id", "=", id)
-    .innerJoin(
-      "meleeMoves as upgrades",
-      "principalMove.upgradesId",
-      "upgrades.id"
-    )
-    .select((eb) => [
-      "principalMove.name",
-      "principalMove.additionalEffects",
-      "principalMove.endStep",
-      "principalMove.id",
-      "upgrades.name as upgrades",
-      jsonArrayFrom(
-        eb
-          .selectFrom("meleeOutcomes")
-          .innerJoin(
-            "meleeMoves as opposingMove",
-            "meleeOutcomes.opposingMoveId",
-            "opposingMove.id"
-          )
-          .whereRef("meleeOutcomes.meleeMoveId", "=", "principalMove.id")
-          .select(["opposingMove.name as opposingMove", "damage", "isCounter"])
-      ).as("meleeOutcomes"),
-    ]);
 };
 
 export const isCharacterInFaction = (
@@ -149,9 +119,13 @@ export const charactersQuery = (fields?: Array<CharacterQueryField>) =>
     )
     .$if(fields === undefined || fields.includes("signatureMove"), (qb) =>
       qb.select((eb) => [
-        jsonObjectFrom(meleeMoveQuery(eb.ref("characters.signatureMoveId"))).as(
-          "signatureMove"
-        ),
+        jsonObjectFrom(
+          meleeMoveQuery().whereRef(
+            "principalMove.id",
+            "=",
+            eb.ref("characters.signatureMoveId")
+          )
+        ).as("signatureMove"),
       ])
     )
     .$if(fields === undefined || fields.includes("abilities"), (qb) =>

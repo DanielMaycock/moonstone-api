@@ -102,7 +102,30 @@ const getMeleeOutcomes = (
   ];
 };
 
-const getSignatureMove = (signatureMove: any) => ({
+const getDamageTypes = (damageType: number) => {
+  const types: string[] = [];
+  // damageType bitmask
+  // 1 Slicing
+  // 2 Piercing
+  // 4 Impact
+  // 8 Magical
+  if ((damageType & 1) === 1) {
+    types.push("Slicing");
+  }
+  if ((damageType & 2) === 2) {
+    types.push("Piercing");
+  }
+  if ((damageType & 4) === 4) {
+    types.push("Impact");
+  }
+  if ((damageType & 8) === 8) {
+    types.push("Magical");
+  }
+
+  return types;
+};
+
+const getSignatureMove = (signatureMove: any) => signatureMove.name !== "None" && signatureMove.name !== "No Signature" ? ({
   id: signatureMove.id,
   name: signatureMove.name,
   upgradesId: getUpgradesMoveId(signatureMove.upgradeFor),
@@ -116,9 +139,10 @@ const getSignatureMove = (signatureMove: any) => ({
     signatureMove.risingAttackDamage,
     signatureMove.lowGuardDamage
   ),
+  damageTypes: getDamageTypes(signatureMove.damageType),
   additionalEffects: signatureMove.extraText,
   endSteps: signatureMove.endStepEffect,
-});
+}) : undefined;
 
 const getArcaneOutcomeCards = (cardValue: number, isCatastrophe: boolean) => {
   // Outcome values
@@ -144,57 +168,57 @@ const getArcaneOutcomeCards = (cardValue: number, isCatastrophe: boolean) => {
     case 0:
       return [{ color: "Placeholder", value: "Placeholder" }];
     case 3:
-      return [{ color: "red", value: "X" }];
+      return [{ color: "Pink", value: "X" }];
     case 4:
-      return [{ color: "blue", value: "2" }];
+      return [{ color: "Blue", value: "2" }];
     case 5:
       return [
-        { color: "blue", value: "2" },
-        { color: "red", value: "2" },
+        { color: "Blue", value: "2" },
+        { color: "Pink", value: "2" },
       ];
     case 8:
-      return [{ color: "blue", value: "3" }];
+      return [{ color: "Blue", value: "3" }];
     case 10:
       return [
-        { color: "blue", value: "3" },
-        { color: "red", value: "3" },
+        { color: "Blue", value: "3" },
+        { color: "Pink", value: "3" },
       ];
     case 12:
-      return [{ color: "blue", value: "X" }];
+      return [{ color: "Blue", value: "X" }];
     case 16:
       return [
-        { color: "red", value: "2" },
-        { color: "blue", value: "2" },
-        { color: "green", value: "2" },
+        { color: "Pink", value: "2" },
+        { color: "Blue", value: "2" },
+        { color: "Green", value: "2" },
       ];
     case 17:
       return [
-        { color: "red", value: "2" },
-        { color: "green", value: "2" },
+        { color: "Pink", value: "2" },
+        { color: "Green", value: "2" },
       ];
     case 32:
       return [
-        { color: "red", value: "3" },
-        { color: "blue", value: "3" },
-        { color: "green", value: "3" },
+        { color: "Pink", value: "3" },
+        { color: "Blue", value: "3" },
+        { color: "Green", value: "3" },
       ];
     case 42:
       return [
-        { color: "red", value: "3" },
-        { color: "blue", value: "3" },
-        { color: "green", value: "3" },
+        { color: "Pink", value: "3" },
+        { color: "Blue", value: "3" },
+        { color: "Green", value: "3" },
       ];
     case 48:
-      return [{ color: "green", value: "X" }];
+      return [{ color: "Green", value: "X" }];
     case 51:
       return [
-        { color: "red", value: "X" },
-        { color: "green", value: "X" },
+        { color: "Pink", value: "X" },
+        { color: "Green", value: "X" },
       ];
     case 60:
       return [
-        { color: "blue", value: "X" },
-        { color: "green", value: "X" },
+        { color: "Blue", value: "X" },
+        { color: "Green", value: "X" },
       ];
     default:
       throw new Error(`Unrecognised card value ${cardValue}`);

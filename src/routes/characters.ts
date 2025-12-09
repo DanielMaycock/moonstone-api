@@ -61,6 +61,8 @@ characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
 
   return c.json(await query.execute());
 });
+
+
 characters.get("/:id", async (c) =>
   c.json(
     await charactersQuery()
