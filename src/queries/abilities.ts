@@ -14,6 +14,7 @@ export const abilitiesQuery = (
       "abilities.oncePerTurn",
       "abilities.pulse",
       "abilities.range",
+      "abilities.type",
       jsonArrayFrom(
         eb
           .selectFrom("arcaneOutcomes")
