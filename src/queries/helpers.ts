@@ -1,4 +1,4 @@
-import { type Expression, sql, type Simplify } from "kysely";
+import { type Expression, type Simplify, sql } from "kysely";
 
 export const lower = (expr: Expression<string>) => sql<string>`lower(${expr})`;
 

@@ -1,7 +1,7 @@
-import { Hono } from "hono";
-import { meleeMoveQuery } from "../queries/meleeMoves";
-import * as v from "valibot";
 import { sValidator } from "@hono/standard-validator";
+import { Hono } from "hono";
+import * as v from "valibot";
+import { meleeMoveQuery } from "../queries/meleeMoves";
 
 const meleeMoves = new Hono();
 
@@ -24,18 +24,18 @@ meleeMoves.get("/", sValidator("query", meleeMoveQuerySchema), async (c) => {
       eb(
         fn<string>("lower", ["principalMove.name"]),
         "like",
-        `%${name.toLowerCase()}%`
-      )
+        `%${name.toLowerCase()}%`,
+      ),
     );
   }
 
-  if(character !== undefined) {
+  if (character !== undefined) {
     query = query.where(({ eb, fn }) =>
       eb(
         fn<string>("lower", ["characters.name"]),
         "like",
-        `%${character.toLowerCase()}%`
-      )
+        `%${character.toLowerCase()}%`,
+      ),
     );
   }
 
@@ -44,8 +44,8 @@ meleeMoves.get("/", sValidator("query", meleeMoveQuerySchema), async (c) => {
       eb(
         fn<string>("lower", ["upgrades.name"]),
         "like",
-        `%${upgrades.toLowerCase()}%`
-      )
+        `%${upgrades.toLowerCase()}%`,
+      ),
     );
   }
 

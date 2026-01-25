@@ -1,9 +1,9 @@
 import { type Kysely, sql } from "kysely";
 import {
-  damageTypeList,
   basicMoves,
-  basicMovesToDamageTypes,
   basicMovesOutcomes,
+  basicMovesToDamageTypes,
+  damageTypeList,
 } from "../data/basicMeleeData";
 
 export const up = async (db: Kysely<any>) => {
@@ -16,12 +16,10 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("melee_moves")
     .addColumn("id", "uuid", (col) =>
-      col.primaryKey().defaultTo(sql`gen_random_uuid()`)
+      col.primaryKey().defaultTo(sql`gen_random_uuid()`),
     )
     .addColumn("name", "text", (col) => col.notNull())
-    .addColumn("upgrades_id", "uuid", (col) =>
-      col.references("melee_moves.id")
-    )
+    .addColumn("upgrades_id", "uuid", (col) => col.references("melee_moves.id"))
     .addColumn("additional_effects", "text")
     .addColumn("end_step", "text")
     .execute();
@@ -29,10 +27,10 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("melee_outcomes")
     .addColumn("melee_move_id", "uuid", (col) =>
-      col.notNull().references("melee_moves.id").onDelete("cascade")
+      col.notNull().references("melee_moves.id").onDelete("cascade"),
     )
     .addColumn("opposing_move_id", "uuid", (col) =>
-      col.notNull().references("melee_moves.id").onDelete("cascade")
+      col.notNull().references("melee_moves.id").onDelete("cascade"),
     )
     .addColumn("damage", "integer")
     .addColumn("is_counter", "boolean", (col) => col.notNull())
@@ -45,10 +43,10 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("melee_moves_to_damage_types")
     .addColumn("melee_move_id", "uuid", (col) =>
-      col.notNull().references("melee_moves.id").onDelete("cascade")
+      col.notNull().references("melee_moves.id").onDelete("cascade"),
     )
     .addColumn("damage_type", "text", (col) =>
-      col.notNull().references("damage_types.damage_type").onDelete("cascade")
+      col.notNull().references("damage_types.damage_type").onDelete("cascade"),
     )
     .execute();
 
@@ -64,7 +62,7 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("characters")
     .addColumn("id", "uuid", (col) =>
-      col.primaryKey().defaultTo(sql`gen_random_uuid()`)
+      col.primaryKey().defaultTo(sql`gen_random_uuid()`),
     )
     .addColumn("name", "text", (col) => col.notNull().unique())
     .addColumn("health", "integer", (col) => col.notNull())
@@ -75,7 +73,7 @@ export const up = async (db: Kysely<any>) => {
     .addColumn("evade", "integer", (col) => col.notNull())
     .addColumn("base_size", "text", (col) => col.notNull())
     .addColumn("signature_move_id", "uuid", (col) =>
-      col.references("melee_moves.id")
+      col.references("melee_moves.id"),
     )
     .addColumn("head_filename", "text")
     .addColumn("full_filename", "text")
@@ -83,19 +81,19 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("characters_to_factions")
     .addColumn("character_id", "uuid", (col) =>
-      col.notNull().references("characters.id").onDelete("cascade")
+      col.notNull().references("characters.id").onDelete("cascade"),
     )
     .addColumn("faction", "text", (col) =>
-      col.notNull().references("factions.faction").onDelete("cascade")
+      col.notNull().references("factions.faction").onDelete("cascade"),
     )
     .execute();
   await db.schema
     .createTable("characters_to_keywords")
     .addColumn("character_id", "uuid", (col) =>
-      col.notNull().references("characters.id").onDelete("cascade")
+      col.notNull().references("characters.id").onDelete("cascade"),
     )
     .addColumn("keyword", "text", (col) =>
-      col.notNull().references("keywords.keyword").onDelete("cascade")
+      col.notNull().references("keywords.keyword").onDelete("cascade"),
     )
     .execute();
 
@@ -107,14 +105,14 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("abilities")
     .addColumn("id", "uuid", (col) =>
-      col.primaryKey().defaultTo(sql`gen_random_uuid()`)
+      col.primaryKey().defaultTo(sql`gen_random_uuid()`),
     )
     .addColumn("character_id", "uuid", (col) =>
-      col.references("characters.id").notNull()
+      col.references("characters.id").notNull(),
     )
     .addColumn("name", "text", (col) => col.notNull())
     .addColumn("type", "text", (col) =>
-      col.notNull().references("ability_type.ability_type")
+      col.notNull().references("ability_type.ability_type"),
     )
     .addColumn("description", "text")
     .addColumn("energy_cost", "integer")
@@ -128,10 +126,10 @@ export const up = async (db: Kysely<any>) => {
   await db.schema
     .createTable("arcane_outcomes")
     .addColumn("id", "uuid", (col) =>
-      col.primaryKey().defaultTo(sql`gen_random_uuid()`)
+      col.primaryKey().defaultTo(sql`gen_random_uuid()`),
     )
     .addColumn("ability_id", "uuid", (col) =>
-      col.notNull().references("abilities.id").onDelete("cascade")
+      col.notNull().references("abilities.id").onDelete("cascade"),
     )
     .addColumn("outcome_text", "text", (col) => col.notNull())
     .execute();
@@ -150,13 +148,13 @@ export const up = async (db: Kysely<any>) => {
     .createTable("arcane_outcome_cards")
     .addColumn("id", "uuid", (col) => col.primaryKey())
     .addColumn("arcane_outcome_id", "uuid", (col) =>
-      col.notNull().references("arcane_outcomes.id").onDelete("cascade")
+      col.notNull().references("arcane_outcomes.id").onDelete("cascade"),
     )
     .addColumn("color", "text", (col) =>
-      col.references("arcane_outcome_card_colors.color")
+      col.references("arcane_outcome_card_colors.color"),
     )
     .addColumn("value", "text", (col) =>
-      col.references("arcane_outcome_card_values.value")
+      col.references("arcane_outcome_card_values.value"),
     )
     .addColumn("is_catastrophe", "boolean", (col) => col.notNull())
     .execute();
@@ -190,18 +188,15 @@ export const up = async (db: Kysely<any>) => {
     ])
     .execute();
 
-  await db.insertInto("arcane_outcome_card_colors").values([
-    { color: "Pink" },
-    { color: "Blue" },
-    { color: "Green" },
-  ]).execute();
+  await db
+    .insertInto("arcane_outcome_card_colors")
+    .values([{ color: "Pink" }, { color: "Blue" }, { color: "Green" }])
+    .execute();
 
-  await db.insertInto("arcane_outcome_card_values").values([
-    { value: "1" },
-    { value: "2" },
-    { value: "3" },
-    { value: "X" },
-  ]).execute();
+  await db
+    .insertInto("arcane_outcome_card_values")
+    .values([{ value: "1" }, { value: "2" }, { value: "3" }, { value: "X" }])
+    .execute();
 };
 
 export async function down(db: Kysely<any>): Promise<void> {

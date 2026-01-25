@@ -20,9 +20,10 @@ await db.transaction().execute(async (tx) => {
         })
         .executeTakeFirstOrThrow();
 
-      await tx.insertInto("meleeOutcomes").values(
-        character.signatureMove.meleeOutcomes
-      ).execute();
+      await tx
+        .insertInto("meleeOutcomes")
+        .values(character.signatureMove.meleeOutcomes)
+        .execute();
 
       for (const damageType of character.signatureMove.damageTypes) {
         await tx
@@ -33,7 +34,7 @@ await db.transaction().execute(async (tx) => {
           })
           .execute();
       }
-    } 
+    }
 
     await tx
       .insertInto("characters")

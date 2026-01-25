@@ -38,7 +38,7 @@ const getMeleeOutcomes = (
   thrustDamage: number | null,
   sweepingCutDamage: number | null,
   risingAttackDamage: number | null,
-  lowGuardDamage: number
+  lowGuardDamage: number,
 ) => {
   // parryType
   // 4 = Thrust
@@ -125,24 +125,27 @@ const getDamageTypes = (damageType: number) => {
   return types;
 };
 
-const getSignatureMove = (signatureMove: any) => signatureMove.name !== "None" && signatureMove.name !== "No Signature" ? ({
-  id: signatureMove.id,
-  name: signatureMove.name,
-  upgradesId: getUpgradesMoveId(signatureMove.upgradeFor),
-  meleeOutcomes: getMeleeOutcomes(
-    signatureMove.id,
-    signatureMove.parryType,
-    signatureMove.highGuardDamage,
-    signatureMove.fallingSwingDamage,
-    signatureMove.thrustDamage,
-    signatureMove.sweepingCutDamage,
-    signatureMove.risingAttackDamage,
-    signatureMove.lowGuardDamage
-  ),
-  damageTypes: getDamageTypes(signatureMove.damageType),
-  additionalEffects: signatureMove.extraText,
-  endSteps: signatureMove.endStepEffect,
-}) : undefined;
+const getSignatureMove = (signatureMove: any) =>
+  signatureMove.name !== "None" && signatureMove.name !== "No Signature"
+    ? {
+        id: signatureMove.id,
+        name: signatureMove.name,
+        upgradesId: getUpgradesMoveId(signatureMove.upgradeFor),
+        meleeOutcomes: getMeleeOutcomes(
+          signatureMove.id,
+          signatureMove.parryType,
+          signatureMove.highGuardDamage,
+          signatureMove.fallingSwingDamage,
+          signatureMove.thrustDamage,
+          signatureMove.sweepingCutDamage,
+          signatureMove.risingAttackDamage,
+          signatureMove.lowGuardDamage,
+        ),
+        damageTypes: getDamageTypes(signatureMove.damageType),
+        additionalEffects: signatureMove.extraText,
+        endSteps: signatureMove.endStepEffect,
+      }
+    : undefined;
 
 const getArcaneOutcomeCards = (cardValue: number, isCatastrophe: boolean) => {
   // Outcome values
@@ -231,7 +234,7 @@ const getArcaneOutcomes = (outcome: any) => {
     outcomeText: outcome.outcomeText,
     outcomeCards: getArcaneOutcomeCards(
       outcome.cardValueRequirement,
-      outcome.catastropheOutcome
+      outcome.catastropheOutcome,
     ),
   };
 };
@@ -284,7 +287,7 @@ const results = characters.map((character: any) => {
     headFilename: character.headFileName,
     signatureMove: getSignatureMove(character.SignatureMove),
     abilities: character.Ability.map((ability: any) =>
-      getAbility(character.id, ability)
+      getAbility(character.id, ability),
     ),
   };
 });

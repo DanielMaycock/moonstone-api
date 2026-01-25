@@ -8,7 +8,7 @@ export const meleeMoveQuery = () => {
     .leftJoin(
       "meleeMoves as upgrades",
       "principalMove.upgradesId",
-      "upgrades.id"
+      "upgrades.id",
     )
     .select((eb) => [
       "principalMove.name",
@@ -22,11 +22,11 @@ export const meleeMoveQuery = () => {
           .whereRef(
             "meleeMovesToDamageTypes.meleeMoveId",
             "=",
-            "principalMove.id"
+            "principalMove.id",
           )
           .select("meleeMovesToDamageTypes.damageType")
           .orderBy("meleeMovesToDamageTypes.damageType"),
-        "damage_type"
+        "damage_type",
       ).as("damageTypes"),
       jsonArrayFrom(
         eb
@@ -34,10 +34,10 @@ export const meleeMoveQuery = () => {
           .innerJoin(
             "meleeMoves as opposingMove",
             "meleeOutcomes.opposingMoveId",
-            "opposingMove.id"
+            "opposingMove.id",
           )
           .whereRef("meleeOutcomes.meleeMoveId", "=", "principalMove.id")
-          .select(["opposingMove.name as opposingMove", "damage", "isCounter"])
+          .select(["opposingMove.name as opposingMove", "damage", "isCounter"]),
       ).as("meleeOutcomes"),
     ]);
 };

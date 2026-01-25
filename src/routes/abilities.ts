@@ -1,7 +1,7 @@
-import { Hono } from "hono";
-import { abilitiesQuery } from "../queries/abilities";
-import * as v from "valibot";
 import { sValidator } from "@hono/standard-validator";
+import { Hono } from "hono";
+import * as v from "valibot";
+import { abilitiesQuery } from "../queries/abilities";
 
 const abilities = new Hono();
 
@@ -9,7 +9,7 @@ const abilitiesQuerySchema = v.object({
   name: v.optional(v.string()),
   character: v.optional(v.string()),
   type: v.optional(
-    v.union([v.literal("passive"), v.literal("active"), v.literal("arcane")])
+    v.union([v.literal("passive"), v.literal("active"), v.literal("arcane")]),
   ),
 });
 
@@ -25,8 +25,8 @@ abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
       eb(
         fn<string>("lower", ["abilities.name"]),
         "like",
-        `%${name.toLowerCase()}%`
-      )
+        `%${name.toLowerCase()}%`,
+      ),
     );
   }
 
@@ -35,8 +35,8 @@ abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
       eb(
         fn<string>("lower", ["characters.name"]),
         "like",
-        `%${character.toLowerCase()}%`
-      )
+        `%${character.toLowerCase()}%`,
+      ),
     );
   }
 
