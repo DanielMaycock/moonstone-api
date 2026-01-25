@@ -4,5 +4,35 @@ services:
     restart: always
     ports:
       - 5432:5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 40s
+      timeout: 30s
+      retries: 3
+      start_period: 30s
     environment:
       POSTGRES_PASSWORD: p4ssw0rd
+    networks:
+      - internal
+    volumes:
+      - db_data:/var/lib/postgresql/
+
+  api-server:
+    depends_on:
+      db:
+        condition: service_healthy
+    build:
+      dockerfile: Dockerfile
+    container_name: api-server
+    environment:
+      DATABASE_URL: postgres://postgres:p4ssw0rd@db:5432/postgres
+    ports:
+      - 3000:3000
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+volumes:
+  db_data:
