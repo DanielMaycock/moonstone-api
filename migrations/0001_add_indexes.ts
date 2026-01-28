@@ -60,11 +60,19 @@ export async function up(db: Kysely<unknown>): Promise<void> {
 
 export async function down(db: Kysely<unknown>): Promise<void> {
   await db.schema.dropIndex("idx_abilities_character_id").execute();
-  await db.schema.dropIndex("idx_characters_to_factions_character_id").execute();
-  await db.schema.dropIndex("idx_characters_to_keywords_character_id").execute();
+  await db.schema
+    .dropIndex("idx_characters_to_factions_character_id")
+    .execute();
+  await db.schema
+    .dropIndex("idx_characters_to_keywords_character_id")
+    .execute();
   await db.schema.dropIndex("idx_arcane_outcomes_ability_id").execute();
-  await db.schema.dropIndex("idx_arcane_outcome_cards_arcane_outcome_id").execute();
-  await db.schema.dropIndex("idx_melee_moves_to_damage_types_melee_move_id").execute();
+  await db.schema
+    .dropIndex("idx_arcane_outcome_cards_arcane_outcome_id")
+    .execute();
+  await db.schema
+    .dropIndex("idx_melee_moves_to_damage_types_melee_move_id")
+    .execute();
   await db.schema.dropIndex("idx_melee_outcomes_melee_move_id").execute();
   await db.schema.dropIndex("idx_abilities_type").execute();
   await db.schema.dropIndex("idx_melee_moves_upgrades_id").execute();
