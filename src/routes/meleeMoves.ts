@@ -62,10 +62,15 @@ meleeMoves.get("/", sValidator("query", meleeMoveQuerySchema), async (c) => {
   return c.json(await query.execute());
 });
 
-meleeMoves.get("/:id", async (c) => {
-  const { id } = c.req.param();
-  const query = meleeMoveQuery().where("principalMove.id", "=", id);
-  const result = await query.executeTakeFirst();
+const idParamSchema = v.object({
+  id: v.pipe(v.string(), v.uuid()),
+});
+
+meleeMoves.get("/:id", sValidator("param", idParamSchema), async (c) => {
+  const { id } = c.req.valid("param");
+  const result = await meleeMoveQuery()
+    .where("principalMove.id", "=", id)
+    .executeTakeFirst();
   if (!result) {
     return c.json({ error: "Melee move not found" }, 404);
   }

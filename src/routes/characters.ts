@@ -62,12 +62,19 @@ characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
   return c.json(await query.execute());
 });
 
-characters.get("/:id", async (c) =>
-  c.json(
-    await charactersQuery()
-      .where("id", "=", c.req.param("id"))
-      .executeTakeFirst(),
-  ),
-);
+const idParamSchema = v.object({
+  id: v.pipe(v.string(), v.uuid()),
+});
+
+characters.get("/:id", sValidator("param", idParamSchema), async (c) => {
+  const { id } = c.req.valid("param");
+  const result = await charactersQuery()
+    .where("id", "=", id)
+    .executeTakeFirst();
+  if (!result) {
+    return c.json({ error: "Character not found" }, 404);
+  }
+  return c.json(result);
+});
 
 export default characters;
