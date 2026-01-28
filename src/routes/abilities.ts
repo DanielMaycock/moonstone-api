@@ -17,7 +17,16 @@ abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
   const { name, character, type } = c.req.valid("query");
 
   let query = abilitiesQuery()
-    .innerJoin("characters", "abilities.characterId", "characters.id")
+    .innerJoin(
+      "charactersToAbilities",
+      "charactersToAbilities.abilityId",
+      "abilities.id",
+    )
+    .innerJoin(
+      "characters",
+      "characters.id",
+      "charactersToAbilities.characterId",
+    )
     .select("characters.name as character");
 
   if (name !== undefined) {

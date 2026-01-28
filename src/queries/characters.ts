@@ -131,11 +131,17 @@ export const charactersQuery = (fields?: Array<CharacterQueryField>) =>
     .$if(fields === undefined || fields.includes("abilities"), (qb) =>
       qb.select((eb) => [
         jsonArrayFrom(
-          abilitiesQuery().whereRef(
-            "abilities.characterId",
-            "=",
-            eb.ref("characters.id"),
-          ),
+          abilitiesQuery()
+            .innerJoin(
+              "charactersToAbilities",
+              "charactersToAbilities.abilityId",
+              "abilities.id",
+            )
+            .whereRef(
+              "charactersToAbilities.characterId",
+              "=",
+              eb.ref("characters.id"),
+            ),
         ).as("abilities"),
       ]),
     );

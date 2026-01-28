@@ -10,7 +10,6 @@ export type Generated<T> = T extends ColumnType<infer S, infer I, infer U>
   : ColumnType<T, T | undefined, T>;
 
 export interface Abilities {
-  characterId: string;
   description: string | null;
   energyCost: number | null;
   id: Generated<string>;
@@ -64,6 +63,11 @@ export interface Characters {
   signatureMoveId: string | null;
 }
 
+export interface CharactersToAbilities {
+  abilityId: string;
+  characterId: string;
+}
+
 export interface CharactersToFactions {
   characterId: string;
   faction: string;
@@ -114,6 +118,7 @@ export interface DB {
   arcaneOutcomeCardValues: ArcaneOutcomeCardValues;
   arcaneOutcomes: ArcaneOutcomes;
   characters: Characters;
+  charactersToAbilities: CharactersToAbilities;
   charactersToFactions: CharactersToFactions;
   charactersToKeywords: CharactersToKeywords;
   damageTypes: DamageTypes;

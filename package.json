@@ -7,6 +7,8 @@
     "apply-migrations": "bun run scripts/applyMigrations.ts",
     "migrate-down": "bun run scripts/migrateDown.ts",
     "seed-characters": "bun run scripts/seedCharacters.ts",
+    "normalize-descriptions": "bun run scripts/normalizeDescriptions.ts",
+    "fix-typos": "bun run scripts/fixTyposAndTerminology.ts",
     "generate-types": "kysely-codegen --camel-case --out-file ./src/db/db.d.ts",
     "biome": "bunx biome check --write"
   },
