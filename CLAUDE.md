@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 MoonstoneAPI is a RESTful API server for the Moonstone tabletop game. It provides game data including characters, abilities, factions, keywords, and melee combat mechanics.
 
+The api is designed to be publicly accessible and read only so no authentication should be needed. 
+
 - **Runtime**: Bun
 - **Framework**: Hono (web framework)
 - **Database**: PostgreSQL with Kysely (type-safe query builder)
@@ -65,3 +67,13 @@ Migrations are in `migrations/` using Kysely's FileMigrationProvider pattern.
 - `GET /keywords` - All keywords
 - `GET /meleeMoves/:id` - Melee moves for a character
 - `GET /images/*` - Static image serving
+
+## Git commit guidelines
+
+All commits should start with a summary, this should be prefix with one of the below depending on the changes in the commit
+- feat - the commit is a new feature
+- fix - the commit fixes a bug or issue
+
+Below this should be a list of more details of the changes made.
+
+Do not add co-authored text to commit messages
