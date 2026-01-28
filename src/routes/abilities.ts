@@ -57,4 +57,19 @@ abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
   return c.json(await query.execute());
 });
 
+const idParamSchema = v.object({
+  id: v.pipe(v.string(), v.uuid()),
+});
+
+abilities.get("/:id", sValidator("param", idParamSchema), async (c) => {
+  const { id } = c.req.valid("param");
+  const result = await abilitiesQuery()
+    .where("abilities.id", "=", id)
+    .executeTakeFirst();
+  if (!result) {
+    return c.json({ error: "Ability not found" }, 404);
+  }
+  return c.json(result);
+});
+
 export default abilities;
