@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: moonstoneapi-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: moonstone
+    volumes:
+      - moonstoneapi_db_data:/var/lib/postgresql/data
+    networks:
+      - moonstoneapi-internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d moonstone"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/moonstoneapi:${IMAGE_TAG:-latest}
+    container_name: moonstoneapi-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@db:5432/moonstone
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - moonstoneapi-internal
+      - traefik-public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.moonstoneapi.rule=Host(`${API_DOMAIN}`)"
+      - "traefik.http.routers.moonstoneapi.entrypoints=websecure"
+      - "traefik.http.routers.moonstoneapi.tls.certresolver=letsencrypt"
+      - "traefik.http.services.moonstoneapi.loadbalancer.server.port=3000"
+
+networks:
+  moonstoneapi-internal:
+  traefik-public:
+    external: true
+
+volumes:
+  moonstoneapi_db_data:
