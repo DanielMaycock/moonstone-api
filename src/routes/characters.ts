@@ -1,6 +1,7 @@
 import { sValidator } from "@hono/standard-validator";
 import { Hono } from "hono";
 import * as v from "valibot";
+import { applyFormat } from "../middleware/format";
 import {
   charactersQuery,
   doesCharacterHaveKeyword,
@@ -33,10 +34,11 @@ const charactersQuerySchema = v.object({
   faction: v.optional(v.string()),
   keyword: v.optional(v.string()),
   fields: v.optional(v.array(characterQueryFieldSchema)),
+  format: v.optional(v.union([v.literal("rich"), v.literal("plain")])),
 });
 
 characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
-  const { name, faction, keyword, fields } = c.req.valid("query");
+  const { name, faction, keyword, fields, format } = c.req.valid("query");
 
   let query = charactersQuery(
     fields !== undefined && fields.length > 0 ? fields : undefined,
@@ -59,22 +61,32 @@ characters.get("/", sValidator("query", charactersQuerySchema), async (c) => {
     );
   }
 
-  return c.json(await query.execute());
+  return c.json(applyFormat(await query.execute(), format));
 });
 
 const idParamSchema = v.object({
   id: v.pipe(v.string(), v.uuid()),
 });
 
-characters.get("/:id", sValidator("param", idParamSchema), async (c) => {
-  const { id } = c.req.valid("param");
-  const result = await charactersQuery()
-    .where("id", "=", id)
-    .executeTakeFirst();
-  if (!result) {
-    return c.json({ error: "Character not found" }, 404);
-  }
-  return c.json(result);
+const idQuerySchema = v.object({
+  format: v.optional(v.union([v.literal("rich"), v.literal("plain")])),
 });
+
+characters.get(
+  "/:id",
+  sValidator("param", idParamSchema),
+  sValidator("query", idQuerySchema),
+  async (c) => {
+    const { id } = c.req.valid("param");
+    const { format } = c.req.valid("query");
+    const result = await charactersQuery()
+      .where("id", "=", id)
+      .executeTakeFirst();
+    if (!result) {
+      return c.json({ error: "Character not found" }, 404);
+    }
+    return c.json(applyFormat(result, format));
+  },
+);
 
 export default characters;

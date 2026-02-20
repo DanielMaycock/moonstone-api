@@ -12,6 +12,7 @@ export const abilitiesQuery = () => {
     "abilities.pulse",
     "abilities.range",
     "abilities.type",
+    "abilities.reloadsAbilityId",
     jsonArrayFrom(
       eb
         .selectFrom("arcaneOutcomes")

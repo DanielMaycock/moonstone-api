@@ -1,6 +1,7 @@
 import { sValidator } from "@hono/standard-validator";
 import { Hono } from "hono";
 import * as v from "valibot";
+import { applyFormat } from "../middleware/format";
 import { abilitiesQuery } from "../queries/abilities";
 
 const abilities = new Hono();
@@ -11,10 +12,11 @@ const abilitiesQuerySchema = v.object({
   type: v.optional(
     v.union([v.literal("passive"), v.literal("active"), v.literal("arcane")]),
   ),
+  format: v.optional(v.union([v.literal("rich"), v.literal("plain")])),
 });
 
 abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
-  const { name, character, type } = c.req.valid("query");
+  const { name, character, type, format } = c.req.valid("query");
 
   let query = abilitiesQuery()
     .innerJoin(
@@ -63,22 +65,32 @@ abilities.get("/", sValidator("query", abilitiesQuerySchema), async (c) => {
     }
   }
 
-  return c.json(await query.execute());
+  return c.json(applyFormat(await query.execute(), format));
 });
 
 const idParamSchema = v.object({
   id: v.pipe(v.string(), v.uuid()),
 });
 
-abilities.get("/:id", sValidator("param", idParamSchema), async (c) => {
-  const { id } = c.req.valid("param");
-  const result = await abilitiesQuery()
-    .where("abilities.id", "=", id)
-    .executeTakeFirst();
-  if (!result) {
-    return c.json({ error: "Ability not found" }, 404);
-  }
-  return c.json(result);
+const idQuerySchema = v.object({
+  format: v.optional(v.union([v.literal("rich"), v.literal("plain")])),
 });
+
+abilities.get(
+  "/:id",
+  sValidator("param", idParamSchema),
+  sValidator("query", idQuerySchema),
+  async (c) => {
+    const { id } = c.req.valid("param");
+    const { format } = c.req.valid("query");
+    const result = await abilitiesQuery()
+      .where("abilities.id", "=", id)
+      .executeTakeFirst();
+    if (!result) {
+      return c.json({ error: "Ability not found" }, 404);
+    }
+    return c.json(applyFormat(result, format));
+  },
+);
 
 export default abilities;
