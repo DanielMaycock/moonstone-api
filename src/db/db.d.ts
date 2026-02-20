@@ -9,8 +9,20 @@ export type Generated<T> = T extends ColumnType<infer S, infer I, infer U>
   ? ColumnType<S, I | undefined, U>
   : ColumnType<T, T | undefined, T>;
 
+export type Json = JsonValue;
+
+export type JsonArray = JsonValue[];
+
+export type JsonObject = {
+  [x: string]: JsonValue | undefined;
+};
+
+export type JsonPrimitive = boolean | number | string | null;
+
+export type JsonValue = JsonArray | JsonObject | JsonPrimitive;
+
 export interface Abilities {
-  description: string | null;
+  description: Json | null;
   energyCost: number | null;
   id: Generated<string>;
   name: string;
@@ -19,6 +31,7 @@ export interface Abilities {
   oncePerTurn: boolean | null;
   pulse: boolean | null;
   range: number | null;
+  reloadsAbilityId: string | null;
   type: string;
 }
 
@@ -45,7 +58,7 @@ export interface ArcaneOutcomeCardValues {
 export interface ArcaneOutcomes {
   abilityId: string;
   id: Generated<string>;
-  outcomeText: string;
+  outcomeText: Json | null;
 }
 
 export interface Characters {
@@ -91,8 +104,8 @@ export interface Keywords {
 }
 
 export interface MeleeMoves {
-  additionalEffects: string | null;
-  endStep: string | null;
+  additionalEffects: Json | null;
+  endStep: Json | null;
   id: Generated<string>;
   name: string;
   upgradesId: string | null;
