@@ -207,7 +207,7 @@ function parseTextChunk(
   // Catastrophe
   patterns.push({
     regex: /\bCatastrophe\b/gi,
-    factory: () => ({ type: "catastrophe" }),
+    factory: () => ({ type: "arcaneCard", catastrophe: true as const }),
   });
 
   // Find all matches with their positions

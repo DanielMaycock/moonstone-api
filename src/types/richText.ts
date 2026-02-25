@@ -5,4 +5,4 @@ export type RichTextSegment =
   | { type: "damageType"; name: string }
   | { type: "character"; name: string; id: string }
   | { type: "arcaneCard"; color: string; value: string }
-  | { type: "catastrophe" };
+  | { type: "arcaneCard"; catastrophe: true };
