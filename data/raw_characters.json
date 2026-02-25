@@ -3360,7 +3360,7 @@
           {
             "id": "f83d2add-3aaa-47a4-9a2c-0ffc4feee2e0",
             "abilityId": "7aeb7f2f-8289-40ae-ac0a-acd7317e7f5f",
-            "outcomeText": "Place a new Solder Psychopomp in base contact with this character.",
+            "outcomeText": "Place a new Soldier Psychopomp in base contact with this character.",
             "catastropheOutcome": false,
             "cardValueRequirement": 0,
             "cardColourRequirement": 1
