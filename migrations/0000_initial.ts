@@ -14,8 +14,8 @@ export const up = async (db: Kysely<unknown>) => {
     )
     .addColumn("name", "text", (col) => col.notNull())
     .addColumn("upgrades_id", "uuid", (col) => col.references("melee_moves.id"))
-    .addColumn("additional_effects", "text")
-    .addColumn("end_step", "text")
+    .addColumn("additional_effects", "jsonb")
+    .addColumn("end_step", "jsonb")
     .execute();
 
   await db.schema
@@ -110,13 +110,16 @@ export const up = async (db: Kysely<unknown>) => {
     .addColumn("type", "text", (col) =>
       col.notNull().references("ability_type.ability_type"),
     )
-    .addColumn("description", "text")
+    .addColumn("description", "jsonb")
     .addColumn("energy_cost", "integer")
     .addColumn("range", "integer")
     .addColumn("pulse", "boolean")
     .addColumn("once_per_turn", "boolean")
     .addColumn("once_per_game", "boolean")
     .addColumn("needs_reloading", "boolean", (col) => col.notNull())
+    .addColumn("reloads_ability_id", "uuid", (col) =>
+      col.references("abilities.id"),
+    )
     .execute();
 
   // Junction table for characters to abilities (many-to-many)
@@ -143,7 +146,7 @@ export const up = async (db: Kysely<unknown>) => {
     .addColumn("ability_id", "uuid", (col) =>
       col.notNull().references("abilities.id").onDelete("cascade"),
     )
-    .addColumn("outcome_text", "text", (col) => col.notNull())
+    .addColumn("outcome_text", "jsonb")
     .execute();
 
   await db.schema
@@ -231,10 +234,19 @@ export const up = async (db: Kysely<unknown>) => {
     .on("melee_moves")
     .column("upgrades_id")
     .execute();
+
+  await db.schema
+    .createIndex("idx_abilities_reloads_ability_id")
+    .on("abilities")
+    .column("reloads_ability_id")
+    .execute();
 };
 
 export async function down(db: Kysely<unknown>): Promise<void> {
   // Drop indexes
+  await db.schema
+    .dropIndex("idx_abilities_reloads_ability_id")
+    .execute();
   await db.schema
     .dropIndex("idx_characters_to_factions_character_id")
     .execute();

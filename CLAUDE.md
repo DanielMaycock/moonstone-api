@@ -20,14 +20,18 @@ The api is designed to be publicly accessible and read only so no authentication
 bun run dev                # Start dev server with hot reload
 bun run apply-migrations   # Run database migrations
 bun run migrate-down       # Rollback migrations
-bun run seed-characters    # Seed character data from JSON
 bun run generate-types     # Generate TypeScript types from DB schema (kysely-codegen)
 bun run biome              # Run Biome linter/formatter with auto-fix
 ```
 
-Docker setup:
+Docker setup (automatically runs migrations and seeds from `data/seed.sql` if DB is empty):
 ```bash
 docker-compose up          # Start PostgreSQL + API server
+```
+
+Manual seeding:
+```bash
+psql $DATABASE_URL < data/seed.sql
 ```
 
 ## Architecture
