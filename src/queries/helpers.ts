@@ -17,7 +17,7 @@ export function richTextToPlain(
   if (segments === null) return null;
   return segments
     .map((s) => {
-      if (s.type === "catastrophe") return "Catastrophe";
+      if (s.type === "arcaneCard" && "catastrophe" in s) return "Catastrophe";
       if (s.type === "arcaneCard") return `${s.color[0]}${s.value}`;
       if ("value" in s && s.value !== undefined) return s.value;
       return "name" in s ? s.name : "";
