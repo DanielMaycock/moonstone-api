@@ -1,4 +1,4 @@
-import { jsonArrayFrom } from "kysely/helpers/postgres";
+import { jsonArrayFrom, jsonObjectFrom } from "kysely/helpers/postgres";
 import { db } from "../db";
 
 export const abilitiesQuery = () => {
@@ -12,7 +12,12 @@ export const abilitiesQuery = () => {
     "abilities.pulse",
     "abilities.range",
     "abilities.type",
-    "abilities.reloadsAbilityId",
+    jsonObjectFrom(
+      eb
+        .selectFrom("abilities as reloadsAbility")
+        .select(["reloadsAbility.id", "reloadsAbility.name"])
+        .whereRef("reloadsAbility.id", "=", "abilities.reloadsAbilityId"),
+    ).as("reloadsAbility"),
     jsonArrayFrom(
       eb
         .selectFrom("arcaneOutcomes")
